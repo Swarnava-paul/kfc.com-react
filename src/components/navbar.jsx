@@ -6,7 +6,10 @@ export const Navbar = ()=>{
      
 
 return(
-<Flex  h='20vh' align='center' justifyContent='space-evenly' pl='5' pr='5'>
+
+<>
+
+<Flex  h={{base:'12vh',sm:'13vh',md:'14vh',lg:'17vh'}} align='center' justify='space-evenly' pl='5' pr='5'>
 
 <Box fontSize={36} justifyContent='space-evenly' alignItems='center' w={{base:'50%',sm:'30%',md:'20%'}} h='30%' display={{base:'flex',sm:'flex',md:'flex',lg:'none',xl:'none'}}>
 <i className="fa-solid fa-bars"></i>
@@ -30,7 +33,14 @@ return(
 
 <Button borderRadius={25} w='14%' colorScheme='red' display={{base:'none',sm:'none', md:'none',lg:'flex'}}>Start order</Button>
 
-</Flex> 
+</Flex> {/** end of Navbar FLex */}
+
+<Button fontSize={14} h='9vh' w='100%' borderRadius='none' bg='RGB(32, 33, 36)' gap={4} _hover={{bg:'black'}}>
+<i style={{color:'red'}} className="fa-solid fa-location-dot"></i>
+<Text color='white'>Start an Order for Pickup or Delivery</Text>
+</Button>
+
+</>
 
   
 )
