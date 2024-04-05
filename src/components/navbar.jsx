@@ -35,7 +35,7 @@ return(
 
 </Flex> {/** end of Navbar FLex */}
 
-<Button fontSize={14} h='9vh' w='100%' borderRadius='none' bg='RGB(32, 33, 36)' gap={4} _hover={{bg:'black'}}>
+<Button fontSize={14} h={{base:'5vh',sm:'6vh',md:'7vh',lg:'9vh'}} w='100%' borderRadius='none' bg='RGB(32, 33, 36)' gap={4} _hover={{bg:'black'}}>
 <i style={{color:'red'}} className="fa-solid fa-location-dot"></i>
 <Text color='white'>Start an Order for Pickup or Delivery</Text>
 </Button>
