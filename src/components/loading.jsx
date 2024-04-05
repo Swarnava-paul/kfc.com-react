@@ -11,10 +11,10 @@ export const Redlineloading = ()=>{
  useEffect(()=>{
  setTimeout(()=>{
    setTranslate('on-translate-loadingg-line')
- },200)
+ },10)
  setTimeout(()=>{
  setDisplayLoading('none')
- },3000)
+ },2500)
  },[])
 
     return(
