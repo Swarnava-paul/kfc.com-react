@@ -6,6 +6,7 @@ import './App.css'
 
 // components
 import { Navbar } from './components/navbar'
+import { Redlineloading } from './components/loading'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <Redlineloading/>
     </>
   )
 }

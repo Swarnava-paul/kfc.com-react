@@ -1,3 +1,11 @@
 *{
     margin: 0;
 }
+
+.default-translate-loading-line{
+    transform: translateY(-1800px);
+}
+.on-translate-loadingg-line{
+    transition: 5s;
+    transform: translateY(1800px);
+}
