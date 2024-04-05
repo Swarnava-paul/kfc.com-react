@@ -2,7 +2,7 @@ import { Box} from "@chakra-ui/react"
 import { useState,useEffect} from "react"
 
 import '../App.css'
-import { transform } from "framer-motion"
+
 export const Redlineloading = ()=>{
 
     const[displayloading,setDisplayLoading]=useState('grid')

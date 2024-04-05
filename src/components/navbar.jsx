@@ -1,9 +1,17 @@
 
 import {Text,Flex,Box,Button,Image} from '@chakra-ui/react'
+import { color } from 'framer-motion'
 
 
 export const Navbar = ()=>{
-     
+
+    const button_style={
+        w:'17%',
+        borderRadius:'20',
+        bg:'white',
+        hover:{bg:'black',color:'white'},
+    }// for buttons that contain home menu careers etc...
+
 
 return(
 
@@ -18,22 +26,22 @@ return(
 
 <Text display={{base:'none',sm:'none',md:'none',lg:'flex'}} fontSize={16} fontWeight='600'>Kentucky Fried Chicken</Text>
 <Box fontSize={15} fontWeight='700' color='black' alignItems='center' justifyContent='space-evenly' h='80%' display={{base:'none',sm:'none',md:'none',lg:'flex'}} w='50%'>
- <Text>Menu</Text>
- <Text>Rewards</Text>
- <Text>Careers</Text>
- <Text>Merch</Text>
- <Text>Find a KFC</Text>
+ <Button sx={button_style} _hover={button_style.hover}>Menu</Button>
+ <Button sx={button_style} _hover={button_style.hover}>Rewards</Button>
+ <Button sx={button_style}  _hover={button_style.hover}>Careers</Button>
+ <Button sx={button_style} _hover={button_style.hover}>Merch</Button>
+ <Button sx={button_style} _hover={button_style.hover}>Find a KFC</Button>
 </Box>{/** home menu careers text holder Box */}
+
 
 <Flex  fontSize={{base:'17',sm:'22',md:'24',lg:'26'}} w={{base:'55%',sm:'40%',md:'45%',lg:'13%'}} h='80%' justify='space-evenly' align='center'>
 <i className="fa-solid fa-magnifying-glass"></i>
 <i className="fa-solid fa-user"></i>
 <i  className="fa-solid fa-bag-shopping"></i>
 </Flex> {/**search icon, bag icon, user icon Flex */}
-
 <Button borderRadius={25} w='14%' colorScheme='red' display={{base:'none',sm:'none', md:'none',lg:'flex'}}>Start order</Button>
-
 </Flex> {/** end of Navbar FLex */}
+
 
 <Button fontSize={{base:'8px',sm:'10px',md:'12px',lg:'14px'}} h={{base:'5vh',sm:'6vh',md:'7vh',lg:'9vh'}} w='100%' borderRadius='none' bg='RGB(32, 33, 36)' gap={4} _hover={{bg:'black'}}>
 <i style={{color:'red'}} className="fa-solid fa-location-dot"></i>
