@@ -41,7 +41,7 @@ const[imagedisplay,setDisplayimage]=useState('none')
 
         <Image w='100%' h={{base:'19vh',sm:'23vh',md:'34vh',lg:'65vh'}} src={image_array[count]}/>
         <Box pl='8' pr='8' bg='RGB(32, 33, 36)'  h={{base:'5vh',sm:'7vh',md:'8vh',lg:'10vh'}} display='flex' justifyContent='center' alignItems='center'>
-        <Text color='white' fontSize={{base:'4',sm:'7',md:'8',lg:'12'}}>Offer only available on kfc.com and the KFC app for participating locations.  Not available in restaurant or on third party ordering platforms. Tax, tips and fees extra. Allow extra cook time for large <br /> orders.</Text>
+        <Text color='white' fontSize={{base:'4',sm:'7',md:'8',lg:'12'}}>Offer only available on kfc.com and the KFC app for participating locations.  Not available in restaurant or on third party ordering platforms. Tax, tips and fees extra. Allow extra cook time for large orders.</Text>
         </Box>
 
         </Box>
