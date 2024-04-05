@@ -15,6 +15,7 @@ const[imagedisplay,setDisplayimage]=useState('none')
     ]
 
     useEffect(() => {
+      console.log('dispfunc');
         setTimeout(() => {
           displ()
         }, 2500)
@@ -23,7 +24,6 @@ const[imagedisplay,setDisplayimage]=useState('none')
       let timeid;
 
       function displ (){
-
         setDisplayimage('block')
             
             if(timeid!=undefined){
@@ -31,7 +31,6 @@ const[imagedisplay,setDisplayimage]=useState('none')
             }
             timeid=setInterval(() => {
              setCount(prevCount => (prevCount === image_array.length - 1 ? 0 : prevCount + 1));
-             console.log(timeid);
             }, 3000);
         
       }
@@ -40,9 +39,9 @@ const[imagedisplay,setDisplayimage]=useState('none')
         <>
         <Box display={imagedisplay} w='100%'>
 
-        <Image h='66vh' src={image_array[count]}/>
-        <Box bg='RGB(32, 33, 36)'  h='10vh' display='flex' justifyContent='center' alignItems='center'>
-        <Text color='white' fontSize={11}>Offer only available on kfc.com and the KFC app for participating locations.  Not available in restaurant or on third party ordering platforms. Tax, tips and fees extra. Allow extra cook time for large <br /> orders.</Text>
+        <Image w='100%' h={{base:'19vh',sm:'23vh',md:'34vh',lg:'65vh'}} src={image_array[count]}/>
+        <Box pl='8' pr='8' bg='RGB(32, 33, 36)'  h={{base:'5vh',sm:'7vh',md:'8vh',lg:'10vh'}} display='flex' justifyContent='center' alignItems='center'>
+        <Text color='white' fontSize={{base:'4',sm:'7',md:'8',lg:'12'}}>Offer only available on kfc.com and the KFC app for participating locations.  Not available in restaurant or on third party ordering platforms. Tax, tips and fees extra. Allow extra cook time for large <br /> orders.</Text>
         </Box>
 
         </Box>
