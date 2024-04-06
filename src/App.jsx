@@ -9,6 +9,9 @@ import { Navbar } from './components/navbar'
 import { Redlineloading } from './components/loading'
 import { Imagemain } from './components/mainimage'
 
+// Route
+import { Allroutes } from './routes/routes'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +20,7 @@ function App() {
     <Navbar/>
     <Redlineloading/>
     <Imagemain/>
+    <Allroutes/>
     </>
   )
 }
