@@ -44,9 +44,9 @@ export const Homapage = ()=>{
         <>
         <Grid placeItems='center' mt='12%' templateRows='10% 90%'>
 
-            <Flex  align='center' pl='8' w='80%' gap={4}>
-                <Text fontSize={30} fontWeight='700' color='RGB(32, 33, 36)'>BROWSE CATEGORIES</Text>   
-                <Box w='60%' border='1px' borderColor='grey'></Box>
+            <Flex  align='center' pl='8' w={{base:'100%',sm:'100%',md:'90%',lg:'80%'}} gap={{base:'4px',sm:'6px',md:'10px',lg:'24px'}}>
+                <Text fontSize={{base:'15px',sm:'19px',md:"24px",lg:'30px'}} fontWeight='700' color='RGB(32, 33, 36)'>BROWSE CATEGORIES</Text>   
+                <Box w={{base:'30%',sm:'43%',md:'50%',lg:'55%'}} border='1px' borderColor='grey'></Box>
             </Flex>{/**end of Flex that contains Text and one box the box is use for mimeake a vertical row  */}
 
 
@@ -65,7 +65,7 @@ export const Homapage = ()=>{
                
                 <Grid bg='RGB(248, 247, 245)' placeItems='center' rowGap={12}>
                     <Image h='100%' w='80%' src='https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg'/>
-                    <Button bg='RGB(248, 247, 245)' w='100%' h='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>View All Menu<i  className="fa-solid fa-arrow-right-long"></i></Button>
+                    <Button fontSize={{base:'10px',sm:'15px',md:'15px',lg:'16px'}} bg='RGB(248, 247, 245)' w='100%' h='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>View All Menu<i  className="fa-solid fa-arrow-right-long"></i></Button>
                 </Grid>{/** view all grid */}
 
             </Grid>{/**end of 2nd child of Main Grid this grid contains images and one grid */}
