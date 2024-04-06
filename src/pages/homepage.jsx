@@ -57,7 +57,7 @@ export const Homapage = ()=>{
 
                 <Grid key={i.id} bg='RGB(248, 247, 245)' placeItems='center'>
                     <Image  h='100%' src={i.img}/>
-                    <Button fontWeight='800' fontSize={{base:'10px',sm:'15px',md:'15px',lg:'16px'}} bg='RGB(248, 247, 245)' h='100%' w='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>{i.text}</Button>
+                    <Button pos='static' fontWeight='800' fontSize={{base:'10px',sm:'15px',md:'15px',lg:'16px'}} bg='RGB(248, 247, 245)' h='100%' w='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>{i.text}</Button>
                 </Grid>
 
                 ))
@@ -65,7 +65,7 @@ export const Homapage = ()=>{
                
                 <Grid bg='RGB(248, 247, 245)' templateRows='80% 20%' placeItems='center'>
                 <Image  w='80%' src='https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg'/>
-                 <Button fontSize={{base:'10px',sm:'15px',md:'15px',lg:'16px'}} bg='RGB(248, 247, 245)' w='100%' h='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>View All Menu<i  className="fa-solid fa-arrow-right-long"></i></Button>
+                 <Button pos='static' fontSize={{base:'10px',sm:'15px',md:'15px',lg:'16px'}} bg='RGB(248, 247, 245)' w='100%' h='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>View All Menu<i  className="fa-solid fa-arrow-right-long"></i></Button>
                 </Grid>{/** view all grid */}
 
             </Grid>{/**end of 2nd child of Main Grid this grid contains images and one grid */}

@@ -1,6 +1,6 @@
 
 import {Text,Flex,Box,Button,Image} from '@chakra-ui/react'
-import { color } from 'framer-motion'
+
 
 
 export const Navbar = ()=>{
@@ -17,7 +17,7 @@ return(
 
 <>
 
-<Flex  h={{base:'12vh',sm:'13vh',md:'14vh',lg:'17vh'}} align='center' justify='space-evenly' pl='5' pr='5'>
+<Flex pos="sticky" bg='white' top='0%' h={{base:'12vh',sm:'13vh',md:'14vh',lg:'17vh'}} align='center' justify='space-evenly' pl='5' pr='5'>
 
 <Box fontSize={{base:'20px',sm:'23px',md:'25px'}} justifyContent='space-evenly' alignItems='center' w={{base:'50%',sm:'30%',md:'20%'}} h='30%' display={{base:'flex',sm:'flex',md:'flex',lg:'none',xl:'none'}}>
 <i className="fa-solid fa-bars"></i>
@@ -43,7 +43,7 @@ return(
 </Flex> {/** end of Navbar FLex */}
 
 
-<Button fontSize={{base:'8px',sm:'10px',md:'12px',lg:'14px'}} h={{base:'5vh',sm:'6vh',md:'7vh',lg:'9vh'}} w='100%' borderRadius='none' bg='RGB(32, 33, 36)' gap={4} _hover={{bg:'black'}}>
+<Button pos="sticky" top={{base:'12vh',sm:'13vh',md:'14vh',lg:'17vh'}} fontSize={{base:'8px',sm:'10px',md:'12px',lg:'14px'}} h={{base:'5vh',sm:'6vh',md:'7vh',lg:'9vh'}} w='100%' borderRadius='none' bg='RGB(32, 33, 36)' gap={4} _hover={{bg:'black'}}>
 <i style={{color:'red'}} className="fa-solid fa-location-dot"></i>
 <Text color='white'>Start an Order for Pickup or Delivery</Text>
 </Button>{/** end of black button that contains location icon and text */}
