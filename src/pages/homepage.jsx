@@ -10,7 +10,7 @@ export const Homapage = ()=>{
             <Flex  align='center' pl='8' w='80%' gap={4}>
                 <Text fontSize={30} fontWeight='700' color='RGB(32, 33, 36)'>BROWSE CATEGORIES</Text>   
                 <Box w='60%' border='1px' borderColor='grey'></Box>
-            </Flex>
+            </Flex>{/**end of Flex that contains Text and one box the box is use for mimeake a vertical row  */}
 
 
             <Grid mt='9vh' h='120vh' templateColumns='repeat(4,18%)' templateRows='repeat(2,30%)' justifyContent='center' columnGap='6' rowGap='7'>
@@ -27,10 +27,10 @@ export const Homapage = ()=>{
                     <Button bg='RGB(248, 247, 245)' h='100%' w='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>View All <i  className="fa-solid fa-arrow-right-long"></i></Button>
                 </Grid>
 
-            </Grid>
+            </Grid>{/**end of 2nd child of Main Grid this grid contains images and one grid */}
 
 
-        </Grid>
+        </Grid>{/** Main Grid that contains Flex another is a Grid that cotains images and one another grid */}
         </>
     )
 }
