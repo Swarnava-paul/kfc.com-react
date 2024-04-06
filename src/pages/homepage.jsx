@@ -1,6 +1,43 @@
 
 import { Box ,Grid,Text,Image ,Flex , Button} from "@chakra-ui/react";
 
+let categories_array=[
+    {
+        img:'https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT233.jpg?ver=41.47',
+        id:1,
+        text:'PERI PERI CHICKEN'
+    },
+    {
+        img:'https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT224.jpg?ver=41.47',
+        id:2,
+        text:'VALUE SNACKERS'
+    },
+    {
+        img:'https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT170.jpg?ver=41.47',
+        id:3,
+        text:'CHICKEN ROLLS'
+    },
+    {
+        img:'https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT86.jpg?ver=41.47',
+        id:4,
+        text:'CHICKEN BUCKETS'
+    },
+    {
+        img:'https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT190.jpg?ver=41.47',
+        id:5,
+        text:'BIRIYANI BUCKETS'
+    },
+    {
+        img:'https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT158.jpg?ver=41.47',
+        id:6,
+        text:'BOX MEALS'
+    },
+    {
+        img:'https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT99.jpg?ver=41.47',
+        id:7,
+        text:'BURGERS'
+    }
+]
 export const Homapage = ()=>{
 
     return(
@@ -13,19 +50,23 @@ export const Homapage = ()=>{
             </Flex>{/**end of Flex that contains Text and one box the box is use for mimeake a vertical row  */}
 
 
-            <Grid mt='9vh' h='120vh' templateColumns='repeat(4,18%)' templateRows='repeat(2,30%)' justifyContent='center' columnGap='6' rowGap='7'>
-                 <Image h='100%' src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT233.jpg?ver=41.47'/>
-                 <Image h='100%' src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT224.jpg?ver=41.47'/>
-                 <Image h='100%' src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT170.jpg?ver=41.47'/>
-                 <Image h='100%' src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT86.jpg?ver=41.47'/>
-                 <Image h='100%' src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT190.jpg?ver=41.47'/>
-                 <Image h='100%' src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT158.jpg?ver=41.47'/>
-                 <Image h='100%' src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT99.jpg?ver=41.47'/>
+            <Grid mt='9vh' h='120vh' templateColumns='repeat(4,18%)' templateRows='repeat(2,34%)' justifyContent='center' columnGap='6' rowGap='7'>
+                
+              {
+                categories_array.map(i=>(
 
-                <Grid bg='RGB(248, 247, 245)' templateColumns='repeat(1,100%)' placeItems='center' rowGap='5'>
-                    <Image w='70%' h='100%' src='https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg'/>
-                    <Button bg='RGB(248, 247, 245)' h='100%' w='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>View All <i  className="fa-solid fa-arrow-right-long"></i></Button>
+                <Grid key={i.id} bg='RGB(248, 247, 245)' placeItems='center'>
+                    <Image  h='100%' src={i.img}/>
+                    <Button fontWeight='800' fontSize={15} bg='RGB(248, 247, 245)' h='100%' w='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>{i.text}</Button>
                 </Grid>
+
+                ))
+              } {/** map over categories_array array and create child GRid */}
+               
+                <Grid bg='RGB(248, 247, 245)' placeItems='center' rowGap={12}>
+                    <Image h='100%' w='80%' src='https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg'/>
+                    <Button bg='RGB(248, 247, 245)' w='100%' h='100%' borderBottomLeftRadius='none' borderBottomRightRadius='none' gap={3}>View All Menu<i  className="fa-solid fa-arrow-right-long"></i></Button>
+                </Grid>{/** view all grid */}
 
             </Grid>{/**end of 2nd child of Main Grid this grid contains images and one grid */}
 
