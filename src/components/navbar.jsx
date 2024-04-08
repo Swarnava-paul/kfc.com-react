@@ -9,7 +9,7 @@ export const Navbar = ()=>{
         w:'17%',
         borderRadius:'20',
         bg:'white',
-        hover:{bg:'black',color:'white'},
+        hover:{bg:'black',color:'white'}
     }// for buttons that contain home menu careers etc...
 
 
