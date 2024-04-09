@@ -1,6 +1,10 @@
 
 import { Box ,Grid,Text,Image ,Flex , Button} from "@chakra-ui/react";
 
+import { Imagemain } from "../components/mainimage";
+
+import {useNavigate } from "react-router-dom";
+
 let categories_array=[
     {
         img:'https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT233.jpg?ver=41.47',
@@ -40,8 +44,11 @@ let categories_array=[
 ]
 export const Homapage = ()=>{
 
+    const navigate =useNavigate()
+
     return(
         <>
+        <Imagemain/>
         <Grid placeItems='center' mt='12%' templateRows='10% 90%'>
 
             <Flex  align='center' pl='8' w={{base:'100%',sm:'100%',md:'90%',lg:'80%'}} gap={{base:'4px',sm:'6px',md:'10px',lg:'24px'}}>
@@ -50,7 +57,7 @@ export const Homapage = ()=>{
             </Flex>{/**end of Flex that contains Text and one box the box is use for mimeake a vertical row  */}
 
 
-            <Grid mt='9vh' h='120vh' templateColumns={{base:'repeat(2,40%)',sm:'repeat(2,41%)',md:'repeat(3,30%)',lg:'repeat(4,18%)'}} templateRows={{base:'repeat(4,20%)',sm:'repeat(2,29%)',md:'repeat(2,25%)',lg:'repeat(2,34%)'}} justifyContent='center' columnGap='6' rowGap='7'>
+            <Grid onClick={()=>{navigate('/categories')}} mt='9vh' h='120vh' templateColumns={{base:'repeat(2,40%)',sm:'repeat(2,41%)',md:'repeat(3,30%)',lg:'repeat(4,18%)'}} templateRows={{base:'repeat(4,20%)',sm:'repeat(2,29%)',md:'repeat(2,25%)',lg:'repeat(2,34%)'}} justifyContent='center' columnGap='6' rowGap='7'>
                 
               {
                 categories_array.map(i=>(
