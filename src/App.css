@@ -9,3 +9,25 @@
     transition: 6s;
     transform: translateY(1800px);
 }
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #bbbbba;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    
+ background-color:rgb(142, 140, 140);
+    border-radius: 1px;
+  }
+
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

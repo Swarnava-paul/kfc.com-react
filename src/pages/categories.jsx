@@ -4,7 +4,13 @@ export const Categoriespage = ()=>{
 
     return(
         <>
+        <Grid>
+
+        <Grid></Grid>{/**side bar */}
         
+         <Box></Box>{/** main content holder */}
+
+        </Grid>{/**Main holder */}
         </>
     )
 }
