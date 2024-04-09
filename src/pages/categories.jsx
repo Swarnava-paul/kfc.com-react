@@ -1,4 +1,5 @@
-import {Box,Grid,Text,Button,Image, border} from '@chakra-ui/react'
+import {Box,Grid,Text,Button,Image,Input} from '@chakra-ui/react'
+import { color } from 'framer-motion'
 
 export const Categoriespage = ()=>{
     
@@ -10,14 +11,32 @@ let border2 ={
     border:'2px',
     borderColor:"black",
 }
+const text_style={
+    color:'rgb(73, 73, 73)',
+    fontSize:"16px",
+    fontWeight:400
+}
     return(
         <>
-        <Grid >
+        <Grid templateColumns='25% 75% '>
 
-        <Grid sx={border} h='90vh' pos='fixed' w='20%'></Grid>{/**side bar */}
+        <Grid h='100vh' justifyContent='center' templateRows='repeat(10,10%)' >
+         <Image width='30%' src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
+         <Text fontSize={32} fontWeight='700'>KFC MENU</Text>
+         <Text sx={text_style}>PERI PERI CHICKEN</Text>
+         <Text sx={text_style}>VALUE SNACKERS</Text>
+         <Text>CHICKEN ROLLS</Text>
+         <Text>CHICKEN BUCKETS</Text>
+         <Text>BIRIYANI BUCKETS</Text>
+         <Text>BOX MEALS</Text>
+         <Text>BURGERS</Text>
+         <Text>SNACKS</Text>
+        </Grid>{/**side bar */}
         
-         <Box sx={border2} h='350vh' pl='20%' w='100%'></Box>{/** main content holder */}
-
+         <Grid sx={border2} h='350vh'>
+            
+        </Grid>{/** main content holder */}
+ 
         </Grid>{/**Main holder */}
         </>
     )
