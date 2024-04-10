@@ -18,7 +18,7 @@ const text_style={
 }
     return(
         <>
-        <Grid templateColumns='25% 75% '>
+        <Grid templateColumns='27% 73% '>
 
         <Grid h='100vh' justifyContent='center' templateRows='repeat(10,10%)' >
          <Image width='30%' src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
@@ -33,8 +33,17 @@ const text_style={
          <Text>SNACKS</Text>
         </Grid>{/**side bar */}
         
-         <Grid sx={border2} h='350vh'>
-            
+         <Grid sx={border2} h='auto' pb='10%' placeItems='center' rowGap={28} mt={152}>
+            <Box border='2px' borderColor='blue' w='80%' h='80vh'>{/**will be map */}
+              <Text>VALUE SNACKERS</Text>
+              <Grid></Grid>
+            </Box>
+
+            <Box border='2px' borderColor='blue' w='80%' h='80vh'>{/**will be map */}
+              <Text>VALUE SNACKERS</Text>
+              <Grid></Grid>
+            </Box>
+
         </Grid>{/** main content holder */}
  
         </Grid>{/**Main holder */}
