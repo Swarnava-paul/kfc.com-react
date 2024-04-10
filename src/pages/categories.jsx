@@ -33,16 +33,21 @@ const text_style={
          <Text>SNACKS</Text>
         </Grid>{/**side bar */}
         
-         <Grid sx={border2} h='auto' pb='10%' placeItems='center' rowGap={28} mt={152}>
-            <Box border='2px' borderColor='blue' w='80%' h='80vh'>{/**will be map */}
-              <Text>VALUE SNACKERS</Text>
-              <Grid></Grid>
-            </Box>
+         <Grid  h='auto' pb='10%'  rowGap={28} mt={152}>
+            <Box w='90%'h='auto' border='2px' borderColor='red'>{/**will be map */}
+              <Text fontSize={25} fontWeight='800'>VALUE SNACKERS</Text>
 
-            <Box border='2px' borderColor='blue' w='80%' h='80vh'>{/**will be map */}
-              <Text>VALUE SNACKERS</Text>
-              <Grid></Grid>
-            </Box>
+              <Grid mt='14' templateColumns='repeat(3,32%)' pb='9' columnGap={2} rowGap={12}>
+
+                <Grid h='70vh' border='1px' borderColor='blue'>12144</Grid>
+                <Grid h='70vh' border='1px' borderColor='blue'>1214454878</Grid>
+                <Grid h='70vh' border='1px' borderColor='blue'>1214454878</Grid>
+                <Grid h='70vh' border='1px' borderColor='blue'>1214454878</Grid>
+                <Grid h='70vh' border='1px' borderColor='blue'>1254878</Grid>
+
+             </Grid>{/* Products cards Grid*/}
+
+              </Box>
 
         </Grid>{/** main content holder */}
  
