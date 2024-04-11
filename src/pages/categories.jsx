@@ -11,6 +11,17 @@ let border2 ={
     border:'2px',
     borderColor:"black",
 }
+
+const side_bar_menu_texts=[
+    'PERI PERI CHICKEN',
+    'VALUE SNACKERS',
+    'CHICKEN ROLLS',
+    'CHICKEN BUCKETS',
+    'BIRIYANI BUCKETS',
+    'BOX MEALS',
+    'BURGERS',
+    'SNACKS'
+]
 const text_style={
     color:'rgb(73, 73, 73)',
     fontSize:"16px",
@@ -20,7 +31,7 @@ const text_style={
         <>
         <Grid templateColumns='27% 73% '>
 
-        <Grid h='100vh' justifyContent='center' templateRows='repeat(10,10%)' >
+        <Grid h='100vh' sx={border} justifyContent='center' templateRows='repeat(10,10%)' >
          <Image width='30%' src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
          <Text fontSize={32} fontWeight='700'>KFC MENU</Text>
          <Text sx={text_style}>PERI PERI CHICKEN</Text>
