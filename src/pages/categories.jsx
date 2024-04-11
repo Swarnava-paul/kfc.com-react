@@ -48,8 +48,8 @@ const text_style={
 
               <Grid mt='14' templateColumns='repeat(3,32%)' pb='9' columnGap={2} rowGap={12}>
 
-                <Grid h='auto' border='1px' borderColor='blue' rowGap={15}>
-                  <Image src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002167.jpg?ver=41.8'/>
+                <Grid h='auto' rowGap={3} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' pb={4} borderRadius={10}>
+                  <Image borderTopLeftRadius={10} borderTopRightRadius={10} src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002167.jpg?ver=41.8'/>
                   <Text ml='3' fontSize={16} fontWeight='600' color='RGB(32, 33, 36)'>All Chicken Box</Text>
                   <Nonveg/>
                   <Text ml='3' color='RGB(32, 33, 36)' fontSize={16} fontWeight='600'>₹859.05</Text>
