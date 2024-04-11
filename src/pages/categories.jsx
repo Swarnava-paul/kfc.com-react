@@ -31,10 +31,14 @@ const text_style={
         <>
         <Grid templateColumns='27% 73% '>
 
-        <Grid h='100vh' sx={border} justifyContent='center' templateRows='repeat(10,10%)' >
+        <Grid h='100vh' sx={border} justifyContent='center' templateRows='repeat(10,10%)'>
          <Image width='30%' src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
          <Text fontSize={32} fontWeight='700'>KFC MENU</Text>
-         
+         {
+            side_bar_menu_texts.map(i=>(
+              <Text key={i}>{i}</Text>
+            ))
+         }
         </Grid>{/**side bar */}
         
          <Grid  h='auto' pb='10%'  rowGap={28} mt={152}>
