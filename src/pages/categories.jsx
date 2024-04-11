@@ -50,8 +50,16 @@ const text_style={
 
                 <Grid h='auto' border='1px' borderColor='blue' rowGap={15}>
                   <Image src='https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002167.jpg?ver=41.8'/>
-                  <Text ml='3' fontSize={16} fontWeight='600'>All Chicken Box</Text>
+                  <Text ml='3' fontSize={16} fontWeight='600' color='RGB(32, 33, 36)'>All Chicken Box</Text>
                   <Nonveg/>
+                  <Text ml='3' color='RGB(32, 33, 36)' fontSize={16} fontWeight='600'>₹859.05</Text>
+                   <Flex fontWeight='400' w='90%' margin='auto' p='15px 15px 15px 0px' fontSize={14} color='RGB(73, 73, 73)'>Family Deal of 3 chicken zingers, med popcorn, med fries & 1 Pepsi 475ml</Flex>
+                   <Flex  w='100%' justify='center'>
+                   <Button color='white' gap={2} bg='RGB(228, 0, 43)' w='70%' borderRadius={19} border='none' _hover={{bg:'RGB(228, 0, 43)'}}> 
+                     Add to Cart
+                     <Image src='https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg'/>
+                   </Button>
+                   </Flex>
                 </Grid>{/**each food card Grid */}
 
              </Grid>{/* Products cards Grid*/}
@@ -70,7 +78,7 @@ const Nonveg= ()=>{
 
     return(
         <>
-        <Flex justify='space-evenly' w='35%' align='center'>
+        <Flex justify='space-evenly' w='35%' align='center' ml='1'>
          <Box w='18%' border='1px' borderColor='darkred' borderRadius='5' h='18px' display='flex' justifyContent='center' alignItems='center'>🔺</Box>
          <Text fontSize={12} fontWeight='400' color='RGB(73, 73, 73)'>Non Veg</Text>
         </Flex>
