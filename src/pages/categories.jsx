@@ -34,14 +34,7 @@ const text_style={
         <Grid h='100vh' sx={border} justifyContent='center' templateRows='repeat(10,10%)' >
          <Image width='30%' src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
          <Text fontSize={32} fontWeight='700'>KFC MENU</Text>
-         <Text sx={text_style}>PERI PERI CHICKEN</Text>
-         <Text sx={text_style}>VALUE SNACKERS</Text>
-         <Text>CHICKEN ROLLS</Text>
-         <Text>CHICKEN BUCKETS</Text>
-         <Text>BIRIYANI BUCKETS</Text>
-         <Text>BOX MEALS</Text>
-         <Text>BURGERS</Text>
-         <Text>SNACKS</Text>
+         
         </Grid>{/**side bar */}
         
          <Grid  h='auto' pb='10%'  rowGap={28} mt={152}>
