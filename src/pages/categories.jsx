@@ -44,7 +44,7 @@ const text_style={
          }
         </Box>{/**side bar */}
         
-         <Grid  h='100vh' overflowY='scroll' pb='10%' rowGap={28} pt={40} >
+         <Grid  h='100vh' overflowY='scroll' pb='10%' rowGap={28}  pt={{base:'10px',sm:'10px',md:'14px',lg:'100px'}} >
 
             <Box h='auto' >{/**will be map */}
               <Text fontSize={25} fontWeight='800'>VALUE SNACKERS</Text>
