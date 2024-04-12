@@ -15,7 +15,6 @@ export const Categoriespage = ()=>{
         method:'get',
         url:'https://kfc-food-data.onrender.com/foods'
      }).then((resp)=>{
-        console.log(resp.data);
        setFoodData(resp.data)
      }).catch((err)=>{
         console.log(err);
@@ -57,7 +56,7 @@ const text_style={
          {
             side_bar_menu_texts.map(i=>(
             <Box key={i} w={{ base: '110px', sm: '110px', md: '130px', lg: "100%" }}>
-              <Text  cursor='pointer' w={{ base: '150px', sm: '150px', md: '130px', lg: "100%" }}  fontSize={{base:"12px",sm:'13px',md:'15px',lg:'17px'}}>{i}</Text>
+            <a href={`#${i}`}><Text  cursor='pointer' w={{ base: '150px', sm: '150px', md: '130px', lg: "100%" }}  fontSize={{base:"12px",sm:'13px',md:'15px',lg:'17px'}}>{i}</Text></a>
               </Box>
             ))
          }
@@ -65,9 +64,10 @@ const text_style={
         
          <Grid  h='100vh' overflowY='scroll' pb='10%' rowGap={28}  pt={{base:'10px',sm:'10px',md:'14px',lg:'100px'}} >
 
+
          { foodData.map(i=>(
             
-            <Box key={Math.random()} h='auto' >{/**will be map */}
+            <Box key={Math.random()} h='auto' id={i[0].head}>{/**will be map */}
               <Text ml='7px' fontSize={{base:'15px',sm:'15px',md:'20px',lg:'25px'}} fontWeight='800'>{i[0].head}</Text>
 
               <Grid justifyContent='center' mt='14'  templateColumns={{base:'repeat(1,70%)',sm:'repeat(3,30%)',md:'repeat(3,30%)',lg:'repeat(3,32%)'}} pb='9' columnGap={{base:"9px",sm:'15px',md:'15px',lg:'10px'}} rowGap={14}>
@@ -93,12 +93,12 @@ const text_style={
 
              </Grid>{/* Products cards Grid*/}
 
-              </Box>
+            </Box>
          ))   
               
-              } {/**main map */}
+         } {/**main map */}
 
-        </Grid>{/** main content holder */}
+         </Grid>{/** main content holder */}
 
  
         </Grid>{/**Main holder Grid of side bar and main content holder */}
