@@ -99,10 +99,11 @@ const Nonveg= ()=>{
 
     return(
         <>
-        <Flex justify='space-evenly' w={{base:'50%',sm:'40%',md:'44%',lg:"30%"}} align='center' ml='1'>
-         <Box w='18%' border='1px' borderColor='darkred' borderRadius='5' h='18px' display='flex' justifyContent='center' alignItems='center'>🔺</Box>
+        <Flex  justify='space-evenly' w={{base:'50%',sm:'40%',md:'44%',lg:"30%"}} align='center' ml='1'>
+         <Image src='https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg'/>
          <Text fontSize={12} fontWeight='400' color='RGB(73, 73, 73)'>Non Veg</Text>
         </Flex>
         </>
     )
 }
+
