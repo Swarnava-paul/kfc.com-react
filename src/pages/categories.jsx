@@ -32,13 +32,13 @@ const text_style={
         <Grid templateColumns={{base:'100%',sm:'100%',md:'100%',lg:'27% 73% '}} templateRows={{base:'10% 90%',sm:'10% 90%',md:'10% 90%',lg:'100%'}}>
 
 
-        <Box overflowX={{base:'scroll',sm:'scroll',md:'scroll',lg:'hidden'}} gap={2} alignItems='center' justifyContent={{base:'space-evenly',sm:"space-evenly",md:'space-evenly',lg:'center'}} display={{base:'flex',sm:'flex',md:'flex',lg:'grid'}}>
+        <Box overflowX={{base:'scroll',sm:'scroll',md:'scroll',lg:'hidden'}} gap={6} alignItems='center' justifyContent={{base:'space-evenly',sm:"space-evenly",md:'space-evenly',lg:'center'}} display={{base:'flex',sm:'flex',md:'flex',lg:'grid'}}>
          <Image width={{base:'10%',sm:"10%",md:'10%',lg:'25%'}} src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
-         <Text  fontSize={{base:'13px',sm:'14px',md:'15px',lg:'30px'}} fontWeight='700'>KFC MENU</Text>
+         <Box  w={{ base: '70px', sm: '110px', md: '80px', lg: "100%" }}><Text w={{ base: '110px', sm: '110px', md: '80px', lg: "100%" }}  fontSize={{base:'13px',sm:'14px',md:'15px',lg:'30px'}} fontWeight='700'>KFC MENU</Text></Box>
          {
             side_bar_menu_texts.map(i=>(
-            <Box key={i} w={{ base: '110px', sm: '110px', md: '80px', lg: "100%" }}>
-              <Text  cursor='pointer' w={{ base: '150px', sm: '150px', md: '80px', lg: "100%" }}  fontSize={{base:"10px",sm:'12px',md:'15px',lg:'17px'}}>{i}</Text>
+            <Box key={i} w={{ base: '110px', sm: '110px', md: '130px', lg: "100%" }}>
+              <Text  cursor='pointer' w={{ base: '150px', sm: '150px', md: '130px', lg: "100%" }}  fontSize={{base:"12px",sm:'13px',md:'15px',lg:'17px'}}>{i}</Text>
               </Box>
             ))
          }
