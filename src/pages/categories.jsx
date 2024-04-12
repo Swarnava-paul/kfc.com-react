@@ -30,14 +30,14 @@ const text_style={
     return(
         <>
         <Grid templateColumns={{base:'100%',sm:'100%',md:'100%',lg:'27% 73% '}}>
-            
+
 
         <Box h='100vh' justifyContent='center' display={{base:'none',sm:'none',md:'none',lg:'grid'}}>
          <Image width='30%' src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
          <Text fontSize={30} fontWeight='700'>KFC MENU</Text>
          {
             side_bar_menu_texts.map(i=>(
-              <Text key={i}>{i}</Text>
+              <Text key={i} cursor='pointer'>{i}</Text>
             ))
          }
         </Box>{/**side bar */}
