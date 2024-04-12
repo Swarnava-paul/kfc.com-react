@@ -30,6 +30,7 @@ const text_style={
     return(
         <>
         <Grid templateColumns={{base:'100%',sm:'100%',md:'100%',lg:'27% 73% '}}>
+            
 
         <Box h='100vh' justifyContent='center' display={{base:'none',sm:'none',md:'none',lg:'grid'}}>
          <Image width='30%' src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
@@ -72,8 +73,9 @@ const text_style={
               </Box>
 
         </Grid>{/** main content holder */}
+
  
-        </Grid>{/**Main holder */}
+        </Grid>{/**Main holder Grid of side bar and main content holder */}
         </>
     )
 }
