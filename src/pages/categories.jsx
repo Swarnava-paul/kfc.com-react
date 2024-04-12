@@ -66,7 +66,9 @@ const side_bar_menu_texts=[
                 <Grid key={index.price+Math.random()} h='auto' rowGap={3} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' pb={4} borderRadius={10}>
                 <Image width={{base:'100%',sm:"100%",md:'100%',lg:'100%'}} borderTopLeftRadius={10} borderTopRightRadius={10} src={index.img}/>
                 <Box  w='93%'><Text ml='3' fontSize={16} fontWeight='600' color='RGB(32, 33, 36)'>{index.title}</Text></Box>
-                <Nonveg/>
+                {
+                 (index.type=='Non veg'?(<Nonveg/>):(<Veg/>))
+                }
                 <Text ml='3' color='RGB(32, 33, 36)' fontSize={16} fontWeight='600'>₹{index.price}</Text>
                  <Flex fontWeight='400' w='90%' margin='auto' p='15px 15px 15px 0px' fontSize={14} color='RGB(73, 73, 73)'>{index.description}</Flex>
                  <Flex  w='100%' justify='center'>
@@ -111,7 +113,7 @@ const Veg = ()=>{
     
     return(
         <>
-        <Flex  justify='space-evenly' w={{base:'50%',sm:'40%',md:'44%',lg:"30%"}} align='center' ml='1'>
+        <Flex justify='space-evenly' w={{base:'30%',sm:'28%',md:'27%',lg:"20%"}} align='center' ml='1'>
          <Image src='https://online.kfc.co.in/static/media/Veg_dot_Icon.d1a3902d.svg'/>
          <Text fontSize={12} fontWeight='400' color='RGB(73, 73, 73)'>Veg</Text>
         </Flex>
