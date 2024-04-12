@@ -47,7 +47,7 @@ const text_style={
          <Grid  h='100vh' overflowY='scroll' pb='10%' rowGap={28}  pt={{base:'10px',sm:'10px',md:'14px',lg:'100px'}} >
 
             <Box h='auto' >{/**will be map */}
-              <Text fontSize={25} fontWeight='800'>VALUE SNACKERS</Text>
+              <Text ml='7px' fontSize={{base:'15px',sm:'15px',md:'20px',lg:'25px'}} fontWeight='800'>VALUE SNACKERS</Text>
 
               <Grid justifyContent='center' mt='14'  templateColumns={{base:'repeat(1,70%)',sm:'repeat(3,30%)',md:'repeat(3,30%)',lg:'repeat(3,32%)'}} pb='9' columnGap={{base:"9px",sm:'15px',md:'15px',lg:'10px'}} rowGap={14}>
             
