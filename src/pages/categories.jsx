@@ -1,7 +1,26 @@
 import {Box,Grid,Text,Button,Image,Input,Flex, border} from '@chakra-ui/react'
 import { color } from 'framer-motion'
 
+//react hooks
+import { useState , useEffect } from 'react'
+//npm packages
+import axios from 'axios'
+
 export const Categoriespage = ()=>{
+
+    const[foodData,setFoodData]=useState([])
+
+    useEffect(()=>{
+     axios({
+        method:'get',
+        url:'https://kfc-food-data.onrender.com/foods'
+     }).then((resp)=>{
+        console.log(resp.data);
+       setFoodData(resp.data)
+     }).catch((err)=>{
+        console.log(err);
+     })
+    },[])
     
 let border ={
     border:'2px',
