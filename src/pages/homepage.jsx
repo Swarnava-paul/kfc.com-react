@@ -1,7 +1,9 @@
 
 import { Box ,Grid,Text,Image ,Flex , Button} from "@chakra-ui/react";
 
+//components
 import { Imagemain } from "../components/mainimage";
+import { Wemakeitbetter } from "../components/wemakeit";
 
 import {useNavigate } from "react-router-dom";
 
@@ -49,7 +51,7 @@ export const Homapage = ()=>{
     return(
         <>
         <Imagemain/>
-        <Grid placeItems='center' mt='12%' templateRows='10% 90%'>
+        <Grid  placeItems='center' mt='12%' templateRows='10% 90%'>
 
             <Flex  align='center' pl='8' w={{base:'100%',sm:'100%',md:'90%',lg:'80%'}} gap={{base:'4px',sm:'6px',md:'10px',lg:'24px'}}>
                 <Text fontSize={{base:'15px',sm:'19px',md:"24px",lg:'30px'}} fontWeight='700' color='RGB(32, 33, 36)'>BROWSE CATEGORIES</Text>   
@@ -79,6 +81,8 @@ export const Homapage = ()=>{
 
 
         </Grid>{/** Main Grid that contains Flex another is a Grid that cotains images and one another grid */}
+
+       <Wemakeitbetter/>
         </>
     )
 }
