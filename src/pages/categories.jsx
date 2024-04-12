@@ -41,12 +41,12 @@ const text_style={
          }
         </Box>{/**side bar */}
         
-         <Grid  h='auto' pb='10%'  rowGap={28} mt={152} >
+         <Grid  h='100vh' overflowY='scroll' pb='10%' rowGap={28} pt={40} >
 
             <Box h='auto' >{/**will be map */}
               <Text fontSize={25} fontWeight='800'>VALUE SNACKERS</Text>
 
-              <Grid justifyContent='center' mt='14' border='2px' borderColor='red' templateColumns={{base:'repeat(2,47%)',sm:'repeat(3,30%)',md:'repeat(3,30%)',lg:'repeat(3,32%)'}} pb='9' columnGap={{base:"4px",sm:'15px',md:'15px',lg:'6px'}} rowGap={14}>
+              <Grid justifyContent='center' mt='14'  templateColumns={{base:'repeat(1,70%)',sm:'repeat(3,30%)',md:'repeat(3,30%)',lg:'repeat(3,32%)'}} pb='9' columnGap={{base:"9px",sm:'15px',md:'15px',lg:'10px'}} rowGap={14}>
             
             {
                 side_bar_menu_texts.map(i=>(
@@ -58,7 +58,7 @@ const text_style={
                 <Text ml='3' color='RGB(32, 33, 36)' fontSize={16} fontWeight='600'>₹859.05</Text>
                  <Flex fontWeight='400' w='90%' margin='auto' p='15px 15px 15px 0px' fontSize={14} color='RGB(73, 73, 73)'>Family Deal of 3 chicken zingers, med popcorn, med fries & 1 Pepsi 475ml</Flex>
                  <Flex  w='100%' justify='center'>
-                 <Button pos='static' color='white' gap={2} bg='RGB(228, 0, 43)' w='70%' borderRadius={19} border='none' _hover={{bg:'RGB(228, 0, 43)'}}> 
+                 <Button pos='static' color='white' gap={2} bg='RGB(228, 0, 43)' w={{base:"90%",sm:"80%",md:'70%',lg:'70%'}} borderRadius={19} border='none' _hover={{bg:'RGB(228, 0, 43)'}}> 
                    Add to Cart
                    <Image src='https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg'/>
                  </Button>
@@ -83,7 +83,7 @@ const Nonveg= ()=>{
 
     return(
         <>
-        <Flex border='1px' borderColor='red' justify='space-evenly' w={{base:'50%',sm:'40%',md:'44%',lg:"30%"}} align='center' ml='1'>
+        <Flex justify='space-evenly' w={{base:'50%',sm:'40%',md:'44%',lg:"30%"}} align='center' ml='1'>
          <Box w='18%' border='1px' borderColor='darkred' borderRadius='5' h='18px' display='flex' justifyContent='center' alignItems='center'>🔺</Box>
          <Text fontSize={12} fontWeight='400' color='RGB(73, 73, 73)'>Non Veg</Text>
         </Flex>
