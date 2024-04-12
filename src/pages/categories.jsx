@@ -33,7 +33,7 @@ const text_style={
 
 
         <Box overflowX={{base:'scroll',sm:'scroll',md:'scroll',lg:'hidden'}} gap={6} alignItems='center' justifyContent={{base:'space-evenly',sm:"space-evenly",md:'space-evenly',lg:'center'}} display={{base:'flex',sm:'flex',md:'flex',lg:'grid'}}>
-         <Image width={{base:'10%',sm:"10%",md:'10%',lg:'25%'}} src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
+         <Image ml={{base:'19px',sm:'19px',md:'19px',lg:'0px'}} width={{base:'10%',sm:"5%",md:'5%',lg:'30%'}} src='https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg'/>
          <Box  w={{ base: '70px', sm: '110px', md: '80px', lg: "100%" }}><Text w={{ base: '110px', sm: '110px', md: '80px', lg: "100%" }}  fontSize={{base:'13px',sm:'14px',md:'15px',lg:'30px'}} fontWeight='700'>KFC MENU</Text></Box>
          {
             side_bar_menu_texts.map(i=>(
