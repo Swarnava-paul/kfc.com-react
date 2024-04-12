@@ -1,5 +1,5 @@
-import {Box,Grid,Text,Button,Image,Input,Flex, border} from '@chakra-ui/react'
-import { color } from 'framer-motion'
+import {Box,Grid,Text,Button,Image,Flex} from '@chakra-ui/react'
+
 
 //react hooks
 import { useState , useEffect } from 'react'
