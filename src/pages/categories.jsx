@@ -21,14 +21,6 @@ export const Categoriespage = ()=>{
      })
     },[])
     
-let border ={
-    border:'2px',
-    borderColor:"red",
-}
-let border2 ={
-    border:'2px',
-    borderColor:"black",
-}
 
 const side_bar_menu_texts=[
     'PERI PERI CHICKEN',
@@ -40,11 +32,7 @@ const side_bar_menu_texts=[
     'BURGERS',
     'SNACKS'
 ]
-const text_style={
-    color:'rgb(73, 73, 73)',
-    fontSize:"16px",
-    fontWeight:400
-}
+
     return(
         <>
         <Grid templateColumns={{base:'100%',sm:'100%',md:'100%',lg:'27% 73% '}} templateRows={{base:'10% 90%',sm:'10% 90%',md:'10% 90%',lg:'100%'}}>
@@ -67,7 +55,7 @@ const text_style={
 
          { foodData.map(i=>(
             
-            <Box key={Math.random()} h='auto' id={i[0].head}>{/**will be map */}
+            <Box key={Math.random()} h='auto' id={i[0].head} >{/**will be map */}
               <Text ml='7px' fontSize={{base:'15px',sm:'15px',md:'20px',lg:'25px'}} fontWeight='800'>{i[0].head}</Text>
 
               <Grid justifyContent='center' mt='14'  templateColumns={{base:'repeat(1,70%)',sm:'repeat(3,30%)',md:'repeat(3,30%)',lg:'repeat(3,32%)'}} pb='9' columnGap={{base:"9px",sm:'15px',md:'15px',lg:'10px'}} rowGap={14}>
