@@ -59,7 +59,7 @@ export const Homapage = ()=>{
             </Flex>{/**end of Flex that contains Text and one box the box is use for mimeake a vertical row  */}
 
 
-            <Grid onClick={()=>{navigate('/categories')}} mt='9vh' h='120vh' templateColumns={{base:'repeat(2,40%)',sm:'repeat(2,41%)',md:'repeat(3,30%)',lg:'repeat(4,18%)'}} templateRows={{base:'repeat(4,20%)',sm:'repeat(2,10%)',md:'repeat(2,24%)',lg:'repeat(2,34%)'}} justifyContent='center' columnGap='6' rowGap='7'>
+            <Grid onClick={()=>{navigate('/categories')}} mt='9vh' h='120vh' templateColumns={{base:'repeat(2,40%)',sm:'repeat(2,41%)',md:'repeat(3,30%)',lg:'repeat(4,18%)'}} templateRows={{base:'repeat(4,20%)',sm:'repeat(4,30%)',md:'repeat(3,29%)',lg:'repeat(2,34%)'}} justifyContent='center' columnGap='6' rowGap='7'>
                 
               {
                 categories_array.map(i=>(
@@ -82,7 +82,7 @@ export const Homapage = ()=>{
 
         </Grid>{/** Main Grid that contains Flex another is a Grid that cotains images and one another grid */}
 
-       <Wemakeitbetter/>
+       
         </>
     )
 }
