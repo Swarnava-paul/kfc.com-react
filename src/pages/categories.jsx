@@ -7,7 +7,8 @@ import { useState , useEffect } from 'react'
 import axios from 'axios'
 
 //components
-
+import { Nonveg } from '../components/nonveg'
+import {Veg} from '../components/veg'
 
 export const Categoriespage = ()=>{
 
