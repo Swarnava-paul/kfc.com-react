@@ -3,7 +3,7 @@ import { Box ,Grid,Text,Image ,Flex , Button} from "@chakra-ui/react";
 
 //components
 import { Imagemain } from "../components/mainimage";
-import { Wemakeitbetter } from "../components/wemakeit";
+import {Wemakeitbetter} from '../components/wemakeit'
 
 import {useNavigate } from "react-router-dom";
 
@@ -51,7 +51,7 @@ export const Homapage = ()=>{
     return(
         <>
         <Imagemain/>
-        <Grid  placeItems='center' mt='12%' templateRows='10% 90%'>
+        <Grid  placeItems='center' mt='12%' templateRows='10% 90%' >
 
             <Flex  align='center' pl='8' w={{base:'100%',sm:'100%',md:'90%',lg:'80%'}} gap={{base:'4px',sm:'6px',md:'10px',lg:'24px'}}>
                 <Text fontSize={{base:'15px',sm:'19px',md:"24px",lg:'30px'}} fontWeight='700' color='RGB(32, 33, 36)'>BROWSE CATEGORIES</Text>   
@@ -59,7 +59,7 @@ export const Homapage = ()=>{
             </Flex>{/**end of Flex that contains Text and one box the box is use for mimeake a vertical row  */}
 
 
-            <Grid onClick={()=>{navigate('/categories')}} mt='9vh' h='120vh' templateColumns={{base:'repeat(2,40%)',sm:'repeat(2,41%)',md:'repeat(3,30%)',lg:'repeat(4,18%)'}} templateRows={{base:'repeat(4,20%)',sm:'repeat(4,30%)',md:'repeat(3,29%)',lg:'repeat(2,34%)'}} justifyContent='center' columnGap='6' rowGap='7'>
+            <Grid onClick={()=>{navigate('/categories')}} mt='9vh' h={{base:'120vh',sm:'190vh',md:'120vh',lg:'120vh'}} templateColumns={{base:'repeat(2,40%)',sm:'repeat(2,41%)',md:'repeat(3,30%)',lg:'repeat(4,18%)'}} templateRows={{base:'repeat(4,20%)',sm:'repeat(4,22%)',md:'repeat(3,29%)',lg:'repeat(2,34%)'}} justifyContent='center' columnGap='6' rowGap='7'>
                 
               {
                 categories_array.map(i=>(
@@ -82,7 +82,7 @@ export const Homapage = ()=>{
 
         </Grid>{/** Main Grid that contains Flex another is a Grid that cotains images and one another grid */}
 
-       
+       <Wemakeitbetter/>
         </>
     )
 }
