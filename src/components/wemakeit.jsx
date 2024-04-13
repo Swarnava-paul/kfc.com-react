@@ -19,10 +19,10 @@ export const Wemakeitbetter = () =>{
           <Button fontSize={{base:'12px',sm:'10px',md:'12px'}} mt='22px' pos='static' w={{base:'33%',sm:'29%',md:'22%',lg:'13%'}} bg='RGB(32, 33, 36)' color='white' _hover={{bg:'RGB(32, 33, 36)'}} borderRadius='15px'>Learn More</Button>
 
           <Image w='50%' src='https://i.ibb.co/p1pfVty/Screenshot-2024-04-12-203023.png'/>
-          
-           <Flex bg='RGB(228, 0, 43)'h='10vh' justify='space-between' w='65%' align='center'>
-            <Text color='white' fontSize={16} fontWeight='600'>FINGER LICKIN GOOD® IS NOW JUST A FEW CLICKS AWAY</Text>
-            <Button w='18%' borderRadius='20px'>Start Order</Button>
+
+           <Flex bg='RGB(228, 0, 43)'h='10vh' justify='space-between' w={{base:'90%',sm:'80%',md:'80%',lg:'65%'}} align='center'>
+            <Text color='white' fontSize={{base:'6px',sm:'11px',md:'14px',lg:'16px'}} fontWeight='600'>FINGER LICKIN GOOD® IS NOW JUST A FEW CLICKS AWAY</Text>
+            <Button h={{base:'4vh',sm:"5vh",md:"5vh",lg:"6vh"}} fontSize={{base:'10px',sm:'10px',md:'10px',lg:'10px'}} w={{base:'30%',sm:'22%',md:'20%',lg:'18%'}} borderRadius='20px'>Start Order</Button>
            </Flex>
 
         </Grid>
