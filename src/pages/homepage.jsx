@@ -1,11 +1,12 @@
-
-import { Box ,Grid,Text,Image ,Flex , Button} from "@chakra-ui/react";
-
 //components
 import { Imagemain } from "../components/mainimage";
 import {Wemakeitbetter} from '../components/wemakeit'
+import { Lastsection } from "../components/lastsection";
 
+//Packages
 import {useNavigate } from "react-router-dom";
+import { Box ,Grid,Text,Image ,Flex , Button} from "@chakra-ui/react";
+
 
 let categories_array=[
     {
@@ -83,6 +84,7 @@ export const Homapage = ()=>{
         </Grid>{/** Main Grid that contains Flex another is a Grid that cotains images and one another grid */}
 
        <Wemakeitbetter/>
+       <Lastsection/>
         </>
     )
 }
