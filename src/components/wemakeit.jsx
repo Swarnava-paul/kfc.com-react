@@ -22,7 +22,7 @@ export const Wemakeitbetter = () =>{
 
            <Flex bg='RGB(228, 0, 43)'h='10vh' justify='space-between' w={{base:'90%',sm:'80%',md:'80%',lg:'65%'}} align='center'>
             <Text color='white' fontSize={{base:'6px',sm:'11px',md:'14px',lg:'16px'}} fontWeight='600'>FINGER LICKIN GOOD® IS NOW JUST A FEW CLICKS AWAY</Text>
-            <Button h={{base:'4vh',sm:"5vh",md:"5vh",lg:"6vh"}} fontSize={{base:'10px',sm:'10px',md:'10px',lg:'10px'}} w={{base:'30%',sm:'22%',md:'20%',lg:'18%'}} borderRadius='20px'>Start Order</Button>
+            <Button h={{base:'4vh',sm:"5vh",md:"5vh",lg:"6vh"}} fontSize={{base:'10px',sm:'10px',md:'10px',lg:'10px'}} w={{base:'25%',sm:'22%',md:'20%',lg:'18%'}} borderRadius='20px'>Start Order</Button>
            </Flex>
 
         </Grid>
