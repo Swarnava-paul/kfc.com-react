@@ -16,13 +16,13 @@ export const Wemakeitbetter = () =>{
 
           <Text fontSize={{base:'10px',sm:'13px',md:'14px',lg:'17px'}} fontWeight='400' color='white'>See what goes into making our world famous fried chicken.</Text>
 
-          <Button fontSize={{base:'9px',sm:'10px',md:'12px'}} mt='22px' pos='static' h={{base:"4vh",sm:'5vh',md:'5vh',lg:'5vh'}} w={{base:'28%',sm:'20%',md:'16%',lg:'13%'}} bg='RGB(32, 33, 36)' color='white' _hover={{bg:'RGB(32, 33, 36)'}} borderRadius='15px'>Learn More</Button>
+          <Button fontSize={{base:'9px',sm:'10px',md:'12px'}} mt='22px' h={{base:"4vh",sm:'5vh',md:'5vh',lg:'5vh'}} w={{base:'28%',sm:'20%',md:'16%',lg:'13%'}} bg='RGB(32, 33, 36)' color='white' _hover={{bg:'RGB(32, 33, 36)'}} borderRadius='15px'>Learn More</Button>
 
           <Image w='50%' src='https://i.ibb.co/p1pfVty/Screenshot-2024-04-12-203023.png'/>
 
            <Flex bg='RGB(228, 0, 43)'h='10vh' justify='space-between' w={{base:'90%',sm:'80%',md:'80%',lg:'65%'}} align='center'>
             <Text color='white' fontSize={{base:'6px',sm:'11px',md:'14px',lg:'16px'}} fontWeight='600'>FINGER LICKIN GOOD® IS NOW JUST A FEW CLICKS AWAY</Text>
-            <Button h={{base:'4vh',sm:"5vh",md:"5vh",lg:"6vh"}} fontSize={{base:'10px',sm:'10px',md:'10px',lg:'10px'}} w={{base:'25%',sm:'22%',md:'20%',lg:'18%'}} borderRadius='20px'>Start Order</Button>
+            <Button pos='static' h={{base:'4vh',sm:"5vh",md:"5vh",lg:"6vh"}} fontSize={{base:'10px',sm:'10px',md:'10px',lg:'10px'}} w={{base:'25%',sm:'22%',md:'20%',lg:'18%'}} borderRadius='20px'>Start Order</Button>
            </Flex>
 
         </Grid>
