@@ -1,6 +1,6 @@
 import {Grid,Text,Box,Button} from "@chakra-ui/react"
 import { useState } from "react"
-
+import '../App.css'
 export function Footer(){
 
     const footer=[
@@ -104,14 +104,14 @@ const Secondsection = ()=>{
 const Responsivefooter =({i})=>{
 
 
-    const[display,setDisplay]=useState('hide')
-
+    const[display,setDisplay]=useState('hide');
+    
     return(
         <>
-        <Grid display={['grid','grid','grid','none']} h='auto' color='white' rowGap={4} p={8}>
+        <Grid  display={['grid','grid','grid','none']} h='auto' color='white' rowGap={4} p={8}>
           {
             (display=='hide'?(
-                <Button pos='static' w='100%' _hover={{bg:'RGB(32, 33, 36)'}}  bg='RGB(32, 33, 36)' color='white' justifyContent='space-between' onClick={()=>{
+                <Button   pos='static'  _hover={{bg:'RGB(32, 33, 36)'}}  bg='RGB(32, 33, 36)' color='white' justifyContent='space-between' onClick={()=>{
                     setDisplay('flex')
                 }}>{i.btnTxt}
                 <i className="fa-solid fa-angle-down"></i>
@@ -120,7 +120,7 @@ const Responsivefooter =({i})=>{
                 <>
                 <Button onClick={()=>{
                     setDisplay('hide')
-                }} w='100%' pos='static'  bg='RGB(32, 33, 36)' color='white' justifyContent='space-between' _hover={{bg:'RGB(32, 33, 36)'}} >
+                }}  pos='static'  bg='RGB(32, 33, 36)' color='white' justifyContent='space-between' _hover={{bg:'RGB(32, 33, 36)'}} >
                {i.btnTxt}
                <i className="fa-solid fa-angle-up"></i>
                </Button>

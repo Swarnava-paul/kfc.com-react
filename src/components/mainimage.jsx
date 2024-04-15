@@ -15,7 +15,6 @@ const[imagedisplay,setDisplayimage]=useState('none')
     ]
 
     useEffect(() => {
-      console.log('dispfunc');
         setTimeout(() => {
           displ()
         }, 2500)
