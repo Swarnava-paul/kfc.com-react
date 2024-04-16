@@ -111,11 +111,14 @@ const Responsivefooter =({i})=>{
         <Grid  display={['grid','grid','grid','none']} h='auto' color='white' rowGap={4} p={8}>
           {
             (display=='hide'?(
+                <>
                 <Button   pos='static'  _hover={{bg:'RGB(32, 33, 36)'}}  bg='RGB(32, 33, 36)' color='white' justifyContent='space-between' onClick={()=>{
                     setDisplay('flex')
                 }}>{i.btnTxt}
                 <i className="fa-solid fa-angle-down"></i>
                 </Button>
+                <Box className="box-border-of-footer"></Box>
+                </>
             ):(
                 <>
                 <Button onClick={()=>{
