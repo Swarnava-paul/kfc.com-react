@@ -14,13 +14,13 @@ export function Footer(){
     return(
         <>
         <Grid  bg='RGB(32, 33, 36)'  h='auto' pt={8}>
-        <First_section_of_footer/>
-        <Second_section_of_footer/>
+        <First_section_of_footer/> 
+        <Second_section_of_footer/> {/* Only visible for Large screens */}
          {
             footer.map(i=>(
-                <Responsive_footer_for_small_screens key={i.btnTxt} i={i}/>
+                <Responsive_footer_for_small_screens key={i.btnTxt} i={i}/> 
             ))
-         }
+         } {/* Only visible for small and medium screens */}
         </Grid>
         </>
     )
