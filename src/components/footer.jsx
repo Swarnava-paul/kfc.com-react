@@ -42,6 +42,7 @@ const First_section_of_footer = ()=>{
            <Box sx={margin_left} w={{base:"90%",sm:'90%',md:"80%",lg:"60%"}}><Text>Pepsi, Pepsi Globe, Mtn Dew, Mtn Dew Sweet Lightning, Starry are registered trademarks of PepsiCo, Inc.
 Dr Pepper is a registered trademark of Dr Pepper/Seven Up, Inc.</Text></Box>
            <Box sx={margin_left}><Text>CAPRI-SUN® and the Pouch Shape™ are licensed trademarks of the Capri Sun Group</Text></Box>
+           <Image margin='auto' display={['flex','flex','flex','none']} src='https://i.ibb.co/yqvGkFc/Screenshot-345.png'/>
         </Grid>
         </>
     )
