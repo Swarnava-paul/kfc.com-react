@@ -141,6 +141,7 @@ const Responsive_footer_for_small_screens =({i})=>{
                 <Text>{i.t3}</Text>
                 <Text>{i.t4}</Text>
                </Box>
+               <Box className="box-border-of-footer"></Box>
                </>
             ))
           }
