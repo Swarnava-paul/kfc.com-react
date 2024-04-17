@@ -30,14 +30,18 @@ export function Footer(){
 
 const Firstsectiontext = ()=>{
 
+    const margin_left={
+        ml:'15px'
+    }
+
     return (
         <>
         <Grid display={['none','none','none','grid']}  h='auto' color='white' fontSize={{base:"7px",sm:'8px',md:'9px',lg:"12px"}} fontWeight='400' rowGap={12} mt={{base:"90px",sm:"50px",md:"80px"}} justifyContent='center'>
-           <Box><Text>Calorie Statement</Text></Box>
-           <Box w={{base:"90%",sm:'90%',md:"90%",lg:"100%"}}><Text>2,000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request in-store and on kfc.com. Prices, participation, and product availability may vary.</Text></Box>
-           <Box w={{base:"90%",sm:'90%',md:"80%",lg:"60%"}}><Text>Pepsi, Pepsi Globe, Mtn Dew, Mtn Dew Sweet Lightning, Starry are registered trademarks of PepsiCo, Inc.
+           <Box sx={margin_left}><Text>Calorie Statement</Text></Box>
+           <Box sx={margin_left} w={{base:"90%",sm:'90%',md:"90%",lg:"90%"}}><Text>2,000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request in-store and on kfc.com. Prices, participation, and product availability may vary.</Text></Box>
+           <Box sx={margin_left} w={{base:"90%",sm:'90%',md:"80%",lg:"60%"}}><Text>Pepsi, Pepsi Globe, Mtn Dew, Mtn Dew Sweet Lightning, Starry are registered trademarks of PepsiCo, Inc.
 Dr Pepper is a registered trademark of Dr Pepper/Seven Up, Inc.</Text></Box>
-           <Box><Text>CAPRI-SUN® and the Pouch Shape™ are licensed trademarks of the Capri Sun Group</Text></Box>
+           <Box sx={margin_left}><Text>CAPRI-SUN® and the Pouch Shape™ are licensed trademarks of the Capri Sun Group</Text></Box>
         </Grid>
         </>
     )
