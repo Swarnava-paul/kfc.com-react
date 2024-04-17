@@ -1,4 +1,4 @@
-import {Grid,Text,Box,Button} from "@chakra-ui/react"
+import {Grid,Text,Box,Button,Image} from "@chakra-ui/react"
 import { useState } from "react"
 import '../App.css'
 export function Footer(){
@@ -54,7 +54,10 @@ const Secondsection = ()=>{
     }
     return(
         <>
-        <Grid display={['none','none','none','grid']} p='20px' rowGap={['36px','35px','33px','0px']} columnGap={['52px','59px','63px','12px']} justifyContent={['center','center','center','space-evenly']} p='30px' fontSize={12} mt={10} w='90%' templateColumns={['repeat(2,33%)','repeat(2,36%)','repeat(3,22%)','repeat(7,19%)']} color='white' >
+        <Grid display={['none','none','none','grid']} p='40px' rowGap={['36px','35px','33px','0px']} columnGap={['52px','59px','63px','8px']} justifyContent={['center','center','center','space-evenly']}  fontSize={12} mt={10} w='90%' templateColumns={['repeat(2,33%)','repeat(2,36%)','repeat(3,22%)','repeat(7,19%)']} color='white' >
+            <Grid>
+                <Image/>
+            </Grid>
             <Grid sx={child_grid_gap}>
                 <Text sx={text_style}>KFC Food</Text>
                 <Grid sx={child_grid_gap} >
