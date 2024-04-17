@@ -14,11 +14,11 @@ export function Footer(){
     return(
         <>
         <Grid  bg='RGB(32, 33, 36)'  h='auto' pt={8}>
-        <Firstsection_of_footer/>
-        <Secondsection_of_footer/>
+        <First_section_of_footer/>
+        <Second_section_of_footer/>
          {
             footer.map(i=>(
-                <Responsivefooter key={i.btnTxt} i={i}/>
+                <Responsive_footer_for_small_screens key={i.btnTxt} i={i}/>
             ))
          }
         </Grid>
@@ -28,7 +28,7 @@ export function Footer(){
 
 
 
-const Firstsection_of_footer = ()=>{
+const First_section_of_footer = ()=>{
 
     const margin_left={
         ml:'15px'
@@ -47,7 +47,7 @@ Dr Pepper is a registered trademark of Dr Pepper/Seven Up, Inc.</Text></Box>
     )
 }
 
-const Secondsection_of_footer= ()=>{
+const Second_section_of_footer= ()=>{
 
     const text_style={
       fontWeight:'700',
@@ -108,7 +108,7 @@ const Secondsection_of_footer= ()=>{
     )
 }
 
-const Responsivefooter =({i})=>{
+const Responsive_footer_for_small_screens =({i})=>{
 
 
     const[display,setDisplay]=useState('hide');
