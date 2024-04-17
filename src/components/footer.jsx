@@ -14,8 +14,8 @@ export function Footer(){
     return(
         <>
         <Grid  bg='RGB(32, 33, 36)'  h='auto' pt={8}>
-        <Firstsectiontext/>
-        <Secondsection/>
+        <Firstsection_of_footer/>
+        <Secondsection_of_footer/>
          {
             footer.map(i=>(
                 <Responsivefooter key={i.btnTxt} i={i}/>
@@ -28,7 +28,7 @@ export function Footer(){
 
 
 
-const Firstsectiontext = ()=>{
+const Firstsection_of_footer = ()=>{
 
     const margin_left={
         ml:'15px'
@@ -47,7 +47,7 @@ Dr Pepper is a registered trademark of Dr Pepper/Seven Up, Inc.</Text></Box>
     )
 }
 
-const Secondsection = ()=>{
+const Secondsection_of_footer= ()=>{
 
     const text_style={
       fontWeight:'700',
