@@ -54,9 +54,9 @@ const Secondsection = ()=>{
     }
     return(
         <>
-        <Grid display={['none','none','none','grid']} p='40px' rowGap={['36px','35px','33px','0px']} columnGap={['52px','59px','63px','8px']} justifyContent={['center','center','center','space-evenly']}  fontSize={12} mt={10} w='90%' templateColumns={['repeat(2,33%)','repeat(2,36%)','repeat(3,22%)','repeat(7,19%)']} color='white' >
-            <Grid>
-                <Image/>
+        <Grid margin='auto' display={['none','none','none','grid']} p='40px' rowGap={['36px','35px','33px','0px']} columnGap={['52px','59px','63px','30px']} justifyContent={['center','center','center','space-evenly']}  fontSize={12} mt={10} w='90%' templateColumns={['repeat(2,33%)','repeat(2,36%)','repeat(3,22%)','repeat(7,15%)']} color='white' >
+            <Grid  >
+                <Image w='80%' src='https://i.ibb.co/yqvGkFc/Screenshot-345.png'/>
             </Grid>
             <Grid sx={child_grid_gap}>
                 <Text sx={text_style}>KFC Food</Text>
