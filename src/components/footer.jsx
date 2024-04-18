@@ -1,6 +1,7 @@
-import {Grid,Text,Box,Button,Image} from "@chakra-ui/react"
+import {Grid,Text,Box,Button,Image, border, background} from "@chakra-ui/react"
 import { useState } from "react"
 import '../App.css'
+import { color } from "framer-motion"
 export function Footer(){
 
     const footer=[
@@ -21,6 +22,9 @@ export function Footer(){
                 <Responsive_footer_for_small_screens key={i.btnTxt} i={i}/> 
             ))
          } {/* Only visible for small and medium screens */}
+         <Grid templateColumns='69% 31%'>
+            <Privacy_terms/>
+         </Grid>
         </Grid>
         </>
     )
@@ -146,6 +150,28 @@ const Responsive_footer_for_small_screens =({i})=>{
             ))
           }
         </Grid>
+        </>
+    )
+}
+
+const Privacy_terms =()=>{
+
+    const vertica_row={
+        
+       color:"white",
+       display:['none','none','none','flex'],
+    }
+
+    return (
+        <>
+        <Box gap={2} display={['grid','grid','grid','flex']} p={5}  fontSize={['15px','17px','22px','10px']} color='white' >
+          <Text>Privacy Policy</Text><Box sx={vertica_row}>|</Box>
+          <Text>Terms of Use</Text><Box sx={vertica_row}>|</Box>
+          <Text>Our Cookies and Ads</Text><Box sx={vertica_row}>|</Box>
+          <Text>Do Not Sell or Share My Personal Information</Text><Box sx={vertica_row}>|</Box>
+          <Text>Accessibility Statement</Text><Box sx={vertica_row}>|</Box>
+          <Text>Build: KFC03222024:a7156544</Text>
+        </Box>
         </>
     )
 }
