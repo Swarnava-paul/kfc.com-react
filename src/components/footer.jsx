@@ -27,6 +27,8 @@ export function Footer(){
             <Privacy_terms/>
             <Follow_us/>
          </Grid>
+ 
+        <Copy_wright/>
 
         </Grid>
         </>
@@ -199,6 +201,17 @@ const Follow_us = ()=>{
           <Box sx={box_style}><i className="fa-brands fa-facebook"></i></Box>
           <Box sx={box_style}><i className="fa-brands fa-x-twitter"></i></Box>
         </Flex>
+        </>
+    )
+}
+
+const Copy_wright = () =>{
+
+    return(
+        <>
+        <Box color='white' margin='auto' p={15} fontSize={['10px','10px','12px','12px']} mt={5}>
+            <Text>Copyright © KFC Corporation 2023 All Rights Reserved</Text>
+        </Box>
         </>
     )
 }
