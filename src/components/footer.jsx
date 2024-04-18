@@ -7,6 +7,7 @@ import { First_section_of_footer } from "./footer-components/first-section"
 import { Second_section_of_footer } from "./footer-components/second-section"
 import { Privacy_terms } from "./footer-components/privacy-terms"
 import { Follow_us } from "./footer-components/follow-us"
+import { Copy_wright } from "./footer-components/copy-wright"
 
 
 export function Footer(){
@@ -90,13 +91,3 @@ const Responsive_footer_for_small_screens =({i})=>{
 
 
 
-const Copy_wright = () =>{
-
-    return(
-        <>
-        <Box color='white' margin='auto' p={15} fontSize={['10px','10px','12px','12px']} mt={5}>
-            <Text>Copyright © KFC Corporation 2023 All Rights Reserved</Text>
-        </Box>
-        </>
-    )
-}
