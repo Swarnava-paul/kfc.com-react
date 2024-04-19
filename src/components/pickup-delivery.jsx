@@ -2,6 +2,9 @@ import { useState } from "react"
 
 import { Flex,Box,Grid,Text,Button,Input, border, useStatStyles } from "@chakra-ui/react"
 
+
+
+
 export const Pickup_delivery = ()=>{
 return(
     <>
@@ -44,30 +47,44 @@ const common_bg={
 
    return(
       <>
-       <Grid  borderBottomLeftRadius={25} sx={common_bg} pb={15} placeItems='center' rowGap={4}>
+       <Grid  borderBottomLeftRadius={25} sx={common_bg} pb={15} placeItems='center' rowGap={4} h='62vh'>
 
          <Text fontSize={22}  fontWeight='700'>How would you like to order?</Text>
 
           <Flex w='100%' bg='red' h='7vh'>
           <Button color={(divBorder=='pickup'?'black':'RGB(101, 101, 101)')} sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('pickup')}}>Pick-Up</Button>
-          <Button color={(divBorder=='delivery'?'black':'RGB(101, 101, 101)')}  sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('delivery')}}>Delivery</Button>
-          </Flex>
+          <Button color={(divBorder=='delivery'?'black':'RGB(101, 101, 101)')}  sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('delivery');state='delivery'}}>Delivery</Button>
+          </Flex>{/** pickup and delivery button holder */}
 
           <Flex w='100%'>
              <Box w='50%' border={(divBorder=='pickup'?'1px':'0px')} borderColor={(divBorder=='pickup'?'red':'white')}></Box>
              <Box w='50%' border={(divBorder=='delivery'?'1px':'0px')} borderColor={(divBorder=='delivery'?'red':'white')}></Box>
           </Flex> {/** bottom border after pick up and delivery button */}
           
-           <Flex w='90%' h='6vh' align='center' margin='auto' border='1px' borderColor='black' mt='25px' borderRadius={15} justify='space-evenly'>
-           <i className="fa-solid fa-magnifying-glass"></i>
-           <input style={{width:'90%', outline:'none',backgroundColor:common_bg.bg}} type='' placeholder='Search by State,City or zip'/>
-           </Flex>
-            
-            <Grid placeItems='center' rowGap={2}>
-            <i  style={{color:"red",fontSize:'48px'}} className="fa-solid fa-location-dot"></i>
-            <Text fontWeight='900'>QUICKLY LOCATE YOUR CLOSEST LOCATION</Text>
-            <Box w='80%' ><Text textAlign='center' fontWeight='500' fontSize={13}>To make finding a location nearest you easier, allow location services to be enabled in settings.</Text></Box>
-            </Grid>
+    {
+      (divBorder=='pickup'?(
+         <>
+         <Flex w='90%' h='6vh' align='center' margin='auto' border='1px' borderColor='black' mt='25px' borderRadius={15} justify='space-evenly'>
+         <i className="fa-solid fa-magnifying-glass"></i>
+         <input style={{width:'90%', outline:'none',backgroundColor:common_bg.bg}} type='' placeholder='Search by State,City or zip'/>
+         </Flex>
+          
+          <Grid placeItems='center' rowGap={1}>
+          <i  style={{color:"red",fontSize:'48px'}} className="fa-solid fa-location-dot"></i>
+          <Text fontWeight='900'>QUICKLY LOCATE YOUR CLOSEST LOCATION</Text>
+          <Box w='80%' ><Text textAlign='center' fontWeight='500' fontSize={13}>To make finding a location nearest you easier, allow location services to be enabled in settings.</Text></Box>
+          </Grid>
+          </>
+      ):(
+         <>
+         <Text fontWeight='700'>Tell us where to deliver your order?</Text>
+         <Flex w='90%' h='6vh' align='center' margin='auto' border='1px' borderColor='black' mt='25px' borderRadius={15} justify='space-evenly'>
+         <i className="fa-solid fa-magnifying-glass"></i>
+         <input style={{width:'90%', outline:'none',backgroundColor:common_bg.bg}} type='' placeholder='Enter Delivery Address'/>
+         </Flex>
+         </>
+      ))
+    }
 
        </Grid>
       </>
