@@ -1,9 +1,16 @@
+import React from 'react'
 
 import {Text,Flex,Box,Button,Image} from '@chakra-ui/react'
 
-
+//context
+import { DeliveryPickupContext } from '../contexts/pickup-delivery-context'
 
 export const Navbar = ()=>{
+
+
+//context
+const {setOnDeliveryComponent} = React.useContext(DeliveryPickupContext)
+
 
     const button_style={
         w:'17%',
@@ -43,7 +50,7 @@ return(
 </Flex> {/** end of Navbar FLex */}
 
 
-<Button pos="sticky" top={{base:'12vh',sm:'13vh',md:'14vh',lg:'17vh'}} fontSize={{base:'8px',sm:'10px',md:'12px',lg:'14px'}} h={{base:'5vh',sm:'6vh',md:'7vh',lg:'9vh'}} w='100%' borderRadius='none' bg='RGB(32, 33, 36)' gap={4} _hover={{bg:'black'}}>
+<Button pos="sticky" top={{base:'12vh',sm:'13vh',md:'14vh',lg:'17vh'}} fontSize={{base:'8px',sm:'10px',md:'12px',lg:'14px'}} h={{base:'5vh',sm:'6vh',md:'7vh',lg:'9vh'}} w='100%' borderRadius='none' bg='RGB(32, 33, 36)' gap={4} _hover={{bg:'black'}} onClick={()=>{setOnDeliveryComponent('grid')}}>
 <i style={{color:'red'}} className="fa-solid fa-location-dot"></i>
 <Text color='white'>Start an Order for Pickup or Delivery</Text>
 </Button>{/** end of black button that contains location icon and text */}

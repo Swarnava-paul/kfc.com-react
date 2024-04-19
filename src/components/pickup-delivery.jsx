@@ -1,18 +1,24 @@
-import { useState } from "react"
+import { useState} from "react"
+import React from "react"
 
-import { Flex,Box,Grid,Text,Button,Input, border, useStatStyles } from "@chakra-ui/react"
+import { Flex,Box,Grid,Text,Button} from "@chakra-ui/react"
 
-
-
+//contexts
+import { DeliveryPickupContext } from "../contexts/pickup-delivery-context"
 
 export const Pickup_delivery = ()=>{
+
+   //context 
+const {onDeliveryComponent,setOnDeliveryComponent} = React.useContext(DeliveryPickupContext)
+
+
 return(
     <>
-    <Grid rowGap={0} pos='absolute'  pos='fixed' m={['0%','0%','0%','11%']} bg='white' w={['100%','100%','100%','80%']}   borderRadius='25px'>
+    <Grid display={onDeliveryComponent} rowGap={0} pos='absolute'  pos='fixed' m={['0%','0%','0%','11%']} bg='white' w={['100%','100%','100%','80%']}   borderRadius='25px'>
   
   <Flex  w='100%' h='9vh' borderTopLeftRadius={25} borderTopRightRadius={25} boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
   <Flex w='95%' justify='center' align='center' fontSize={18} fontWeight='700'><Text>START YOUR ORDER</Text></Flex>
-  <Flex w='5%' justify='center' align='center' fontSize={20}><i className="fa-solid fa-xmark"></i></Flex>
+  <Flex w='5%' justify='center' align='center' fontSize={20}><i className="fa-solid fa-xmark" style={{cursor:'pointer'}} onClick={()=>{setOnDeliveryComponent('none')}}></i></Flex>
   </Flex>
 
   <Grid templateColumns='repeat(2,50%)' h='auto' >
