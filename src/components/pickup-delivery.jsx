@@ -8,14 +8,14 @@ import { Flex,Box,Grid,Text,Button,Input, border, useStatStyles } from "@chakra-
 export const Pickup_delivery = ()=>{
 return(
     <>
-    <Grid pos='absolute' rowGap={2} pos='fixed' m={['0%','0%','0%','11%']} bg='white' w={['100%','100%','100%','80%']}   borderRadius='25px'>
+    <Grid rowGap={0} pos='absolute'  pos='fixed' m={['0%','0%','0%','11%']} bg='white' w={['100%','100%','100%','80%']}   borderRadius='25px'>
   
   <Flex  w='100%' h='9vh' borderTopLeftRadius={25} borderTopRightRadius={25} boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
   <Flex w='95%' justify='center' align='center' fontSize={18} fontWeight='700'><Text>START YOUR ORDER</Text></Flex>
   <Flex w='5%' justify='center' align='center' fontSize={20}><i className="fa-solid fa-xmark"></i></Flex>
   </Flex>
 
-  <Grid templateColumns='repeat(2,50%)' h='auto'>
+  <Grid templateColumns='repeat(2,50%)' h='auto' >
    <Left_section/>
    <Right_section/>
   </Grid>
@@ -47,7 +47,7 @@ const common_bg={
 
    return(
       <>
-       <Grid  borderBottomLeftRadius={25} sx={common_bg} pb={15} placeItems='center' rowGap={4} h='62vh'>
+       <Grid  borderBottomLeftRadius={25} sx={common_bg} pb={15} placeItems='center' rowGap={4} h='64vh'>
 
          <Text fontSize={22}  fontWeight='700'>How would you like to order?</Text>
 
@@ -94,7 +94,9 @@ const common_bg={
 const Right_section = ()=>{
    return(
       <>
-      <Box   borderBottomRightRadius={25}></Box>
+      <Box   borderBottomRightRadius={25}>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5767946.969462261!2d-105.69989700520588!3d37.30309266367307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8706291cf1e026a9%3A0xd9278a10cadf8705!2sTexas%20County%2C%20OK%2C%20USA!5e0!3m2!1sen!2sin!4v1713494727993!5m2!1sen!2sin" style={{width:"100%", height:"100%", borderBottomRightRadius:'15px' }} loading="lazy" allowFullScreen="" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      </Box>
       </>
    )
 }
