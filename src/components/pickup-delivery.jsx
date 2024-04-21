@@ -14,14 +14,14 @@ const {onDeliveryComponent,setOnDeliveryComponent} = React.useContext(DeliveryPi
 
 return(
     <>
-    <Grid display={onDeliveryComponent} rowGap={0} pos='absolute'  pos='fixed' m={['0%','0%','0%','11%']} bg='white' w={['100%','100%','100%','80%']}   borderRadius='25px'>
+    <Grid  display={onDeliveryComponent} rowGap={0} pos='absolute'  m={['0%','0%','0%','11%']} bg='white' w={['100%','100%','100%','80%']}   borderRadius='25px'>
   
-  <Flex  w='100%' h='9vh' borderTopLeftRadius={25} borderTopRightRadius={25} boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
-  <Flex w='95%' justify='center' align='center' fontSize={18} fontWeight='700'><Text>START YOUR ORDER</Text></Flex>
+  <Flex mt={['95px','120px','124px','0px']}  w='100%' h='9vh' borderTopLeftRadius={25} borderTopRightRadius={25} boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
+  <Flex  w='95%' justify='center' align='center'  fontWeight='700'><Text fontSize={18}>START YOUR ORDER</Text></Flex>
   <Flex w='5%' justify='center' align='center' fontSize={20}><i className="fa-solid fa-xmark" style={{cursor:'pointer'}} onClick={()=>{setOnDeliveryComponent('none')}}></i></Flex>
   </Flex>
 
-  <Grid templateColumns='repeat(2,50%)' h='auto' >
+  <Grid   templateColumns={['100%','100%','100%','repeat(2,50%)']}  templateRows={['repeat(2,1fr)','repeat(2,1fr)','repeat(2,1fr)','100%']}>
    <Left_section/>
    <Right_section/>
   </Grid>
