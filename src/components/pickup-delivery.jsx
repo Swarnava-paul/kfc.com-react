@@ -57,7 +57,6 @@ const common_bg={
 
          <Text fontSize={22}  fontWeight='700'>How would you like to order?</Text>
 
-        <Grid w='100%'>
           <Flex w='100%' bg='red' h='7vh'>
           <Button color={(divBorder=='pickup'?'black':'RGB(101, 101, 101)')} sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('pickup')}}>Pick-Up</Button>
           <Button color={(divBorder=='delivery'?'black':'RGB(101, 101, 101)')}  sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('delivery');state='delivery'}}>Delivery</Button>
@@ -67,9 +66,10 @@ const common_bg={
              <Box w='50%' border={(divBorder=='pickup'?'1px':'0px')} borderColor={(divBorder=='pickup'?'red':'white')}></Box>
              <Box w='50%' border={(divBorder=='delivery'?'1px':'0px')} borderColor={(divBorder=='delivery'?'red':'white')}></Box>
           </Flex> {/** bottom border after pick up and delivery button */}
-          </Grid>
 
-    <Grid  h='40vh' w='100%'>      
+
+
+    <Grid  h='37vh' w='100%'>      
     {
       (divBorder=='pickup'?(
          <>
@@ -94,7 +94,9 @@ const common_bg={
          </>
       ))
     }
-</Grid>
+   </Grid>
+
+
        </Grid>
       </>
    )
@@ -104,7 +106,7 @@ const Right_section = ()=>{
    return(
       <>
       <Box   borderBottomRightRadius={25}>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5767946.969462261!2d-105.69989700520588!3d37.30309266367307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8706291cf1e026a9%3A0xd9278a10cadf8705!2sTexas%20County%2C%20OK%2C%20USA!5e0!3m2!1sen!2sin!4v1713494727993!5m2!1sen!2sin" style={{width:"100%", height:"100%", borderBottomRightRadius:'15px' }} loading="lazy" allowFullScreen="" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5767946.969462261!2d-105.69989700520588!3d37.30309266367307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8706291cf1e026a9%3A0xd9278a10cadf8705!2sTexas%20County%2C%20OK%2C%20USA!5e0!3m2!1sen!2sin!4v1713494727993!5m2!1sen!2sin" style={{width:"100%", height:"100%", borderBottomRightRadius:'15px'}} loading="lazy" allowFullScreen="" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </Box>
       </>
    )
