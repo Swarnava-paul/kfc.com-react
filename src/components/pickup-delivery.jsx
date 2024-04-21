@@ -53,10 +53,11 @@ const common_bg={
 
    return(
       <>
-       <Grid  borderBottomLeftRadius={25} sx={common_bg} pb={15} placeItems='center' rowGap={4} h='64vh'>
+       <Grid  borderBottomLeftRadius={25} sx={common_bg} pb={15} placeItems='center' rowGap={4} >
 
          <Text fontSize={22}  fontWeight='700'>How would you like to order?</Text>
 
+        <Grid w='100%'>
           <Flex w='100%' bg='red' h='7vh'>
           <Button color={(divBorder=='pickup'?'black':'RGB(101, 101, 101)')} sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('pickup')}}>Pick-Up</Button>
           <Button color={(divBorder=='delivery'?'black':'RGB(101, 101, 101)')}  sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('delivery');state='delivery'}}>Delivery</Button>
@@ -66,7 +67,9 @@ const common_bg={
              <Box w='50%' border={(divBorder=='pickup'?'1px':'0px')} borderColor={(divBorder=='pickup'?'red':'white')}></Box>
              <Box w='50%' border={(divBorder=='delivery'?'1px':'0px')} borderColor={(divBorder=='delivery'?'red':'white')}></Box>
           </Flex> {/** bottom border after pick up and delivery button */}
-          
+          </Grid>
+
+    <Grid  h='40vh' w='100%'>      
     {
       (divBorder=='pickup'?(
          <>
@@ -83,7 +86,7 @@ const common_bg={
           </>
       ):(
          <>
-         <Text fontWeight='700'>Tell us where to deliver your order?</Text>
+         <Text fontWeight='700' textAlign='center'>Tell us where to deliver your order?</Text>
          <Flex w='90%' h='6vh' align='center' margin='auto' border='1px' borderColor='black' mt='25px' borderRadius={15} justify='space-evenly'>
          <i className="fa-solid fa-magnifying-glass"></i>
          <input style={{width:'90%', outline:'none',backgroundColor:common_bg.bg}} type='' placeholder='Enter Delivery Address'/>
@@ -91,7 +94,7 @@ const common_bg={
          </>
       ))
     }
-
+</Grid>
        </Grid>
       </>
    )
