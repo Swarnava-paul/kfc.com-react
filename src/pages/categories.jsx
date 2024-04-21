@@ -1,4 +1,4 @@
-import {Box,Grid,Text,Button,Image,Flex} from '@chakra-ui/react'
+import {Box,Grid,Text,Button,Image,Flex,Skeleton} from '@chakra-ui/react'
 
 
 //react hooks
@@ -57,9 +57,28 @@ const side_bar_menu_texts=[
          <Grid  h='100vh' overflowY='scroll' pb='10%' rowGap={28}  pt={{base:'10px',sm:'10px',md:'14px',lg:'100px'}} >
 
 
-         { foodData.map(i=>(
-            
-            <Box key={Math.random()} h='auto' id={i[0].head} >{/**will be map */}
+       { foodData.map(i=>(
+        
+          <Products_boxes key={Math.random()} i={i}/>
+ 
+         ))   
+              
+         } {/**main map */}
+
+         </Grid>{/** main content holder */}
+
+ 
+        </Grid>{/**Main holder Grid of side bar and main content holder */}
+        </>
+    )
+}
+
+
+const Products_boxes = ({i})=>{
+console.log(i);
+  return(
+    <>
+               <Box key={Math.random()} h='auto' id={i[0].head} >{/**will be map */}
               <Text ml='7px' fontSize={{base:'15px',sm:'15px',md:'20px',lg:'25px'}} fontWeight='800'>{i[0].head}</Text>
 
               <Grid justifyContent='center' mt='14'  templateColumns={{base:'repeat(1,70%)',sm:'repeat(3,30%)',md:'repeat(3,30%)',lg:'repeat(3,32%)'}} pb='9' columnGap={{base:"9px",sm:'15px',md:'15px',lg:'10px'}} rowGap={14}>
@@ -88,16 +107,6 @@ const side_bar_menu_texts=[
              </Grid>{/* Products cards Grid*/}
 
             </Box>
-         ))   
-              
-         } {/**main map */}
-
-         </Grid>{/** main content holder */}
-
- 
-        </Grid>{/**Main holder Grid of side bar and main content holder */}
-        </>
-    )
+    </>
+  )
 }
-
-
