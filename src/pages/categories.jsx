@@ -1,4 +1,4 @@
-import {Box,Grid,Text,Button,Image,Flex,Skeleton} from '@chakra-ui/react'
+import {Box,Grid,Text,Button,Image,Flex,Skeleton,SkeletonText} from '@chakra-ui/react'
 
 
 //react hooks
@@ -12,8 +12,7 @@ import {Veg} from '../components/veg'
 
 export const Categoriespage = ()=>{
 
-    const[foodData,setFoodData]=useState([])
-
+    const[foodData,setFoodData]=useState('[]')
     useEffect(()=>{
      axios({
         method:'get',
@@ -57,13 +56,17 @@ const side_bar_menu_texts=[
          <Grid  h='100vh' overflowY='scroll' pb='10%' rowGap={28}  pt={{base:'10px',sm:'10px',md:'14px',lg:'100px'}} >
 
 
-       { foodData.map(i=>(
-        
+       { 
+ 
+      (foodData=='[]'?(<Skeletonloading/>):(
+        foodData.map(i=>(
+
           <Products_boxes key={Math.random()} i={i}/>
  
-         ))   
+         ))  
+      ))
               
-         } {/**main map */}
+       } {/**main map */}
 
          </Grid>{/** main content holder */}
 
@@ -75,7 +78,7 @@ const side_bar_menu_texts=[
 
 
 const Products_boxes = ({i})=>{
-console.log(i);
+
   return(
     <>
                <Box key={Math.random()} h='auto' id={i[0].head} >{/**will be map */}
@@ -107,6 +110,90 @@ console.log(i);
              </Grid>{/* Products cards Grid*/}
 
             </Box>
+    </>
+  )
+}
+
+const Skeletonloading = ()=>{
+
+  const[display,setDisplay]=useState('none')
+
+  setTimeout(()=>{
+    setDisplay('grid')
+  },2300)
+
+  return(
+    <>
+  <Grid display={display} justifyContent='center'  rowGap={14} templateColumns={{base:'repeat(1,70%)',sm:'repeat(3,30%)',md:'repeat(3,30%)',lg:'repeat(3,32%)'}} pb='9' columnGap={{base:"9px",sm:'15px',md:'15px',lg:'10px'}}>
+   
+   <Grid h='auto'> 
+   <Skeleton h='35vh'/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <Flex w='100%' justify='center'><Skeleton h='4vh' w='70%' mt={4}/></Flex>
+   </Grid>
+
+   <Grid h='auto'> 
+   <Skeleton h='35vh'/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <Flex w='100%' justify='center'><Skeleton h='4vh' w='80%' mt={4}/></Flex>
+   </Grid>   
+   
+   <Grid h='auto'> 
+   <Skeleton h='35vh'/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <Flex w='100%' justify='center'><Skeleton h='4vh' w='80%' mt={4}/></Flex>
+   </Grid>
+
+
+   <Grid h='auto'> 
+   <Skeleton h='35vh'/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <Flex w='100%' justify='center'><Skeleton h='4vh' w='80%' mt={4}/></Flex>
+   </Grid>
+
+
+   <Grid h='auto'> 
+   <Skeleton h='35vh'/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <Flex w='100%' justify='center'><Skeleton h='4vh' w='80%' mt={4}/></Flex>
+   </Grid>
+
+
+
+
+   <Grid h='auto'> 
+   <Skeleton h='35vh'/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <Flex w='100%' justify='center'><Skeleton h='4vh' w='80%' mt={4}/></Flex>
+   </Grid>
+
+
+
+   <Grid h='auto'> 
+   <Skeleton h='35vh'/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <Flex w='100%' justify='center'><Skeleton h='4vh' w='80%' mt={4}/></Flex>
+   </Grid>
+
+
+
+   <Grid h='auto'> 
+   <Skeleton h='35vh'/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <SkeletonText noOfLines={3} mt={4}/>
+   <Flex w='100%' justify='center'><Skeleton h='4vh' w='80%' mt={4}/></Flex>
+   </Grid>
+
+    
+  </Grid>
+
     </>
   )
 }
