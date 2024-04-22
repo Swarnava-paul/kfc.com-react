@@ -116,15 +116,11 @@ const Products_boxes = ({i})=>{
 
 const Skeletonloading = ()=>{
 
-  const[display,setDisplay]=useState('none')
-
-  setTimeout(()=>{
-    setDisplay('grid')
-  },2300)
+ 
 
   return(
     <>
-  <Grid display={display} justifyContent='center'  rowGap={14} templateColumns={{base:'repeat(1,70%)',sm:'repeat(3,30%)',md:'repeat(3,30%)',lg:'repeat(3,32%)'}} pb='9' columnGap={{base:"9px",sm:'15px',md:'15px',lg:'10px'}}>
+  <Grid  justifyContent='center'  rowGap={14} templateColumns={{base:'repeat(1,70%)',sm:'repeat(3,30%)',md:'repeat(3,30%)',lg:'repeat(3,32%)'}} pb='9' columnGap={{base:"9px",sm:'15px',md:'15px',lg:'10px'}}>
    
    <Grid h='auto'> 
    <Skeleton h='35vh'/>
