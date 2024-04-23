@@ -29,7 +29,7 @@ export const Hamburger = ()=>{
 
           <Grid color='black'>
               <Text fontSize={[32,40,50]} fontWeight='700' color='RGB(32, 33, 36)'>LET'S GET COOKIN'</Text>
-              <Button bg='RGB(32, 33, 36)' color='white' borderRadius={8} _hover={{bg:"RGB(32, 33, 36)"}} w={['40%','26%','20%']} fontSize={13} fontWeight='500'>Sign In / Sign Up {'->'}</Button>
+              <Button bg='RGB(32, 33, 36)' color='white' borderRadius={8} _hover={{bg:"RGB(32, 33, 36)"}} w={['35%','26%','20%']} fontSize={['9px','10px','12px']} fontWeight='500'>Sign In / Sign Up {'->'}</Button>
           </Grid>
 
           {
