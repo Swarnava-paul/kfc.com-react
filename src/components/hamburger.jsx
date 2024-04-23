@@ -25,10 +25,10 @@ export const Hamburger = ()=>{
 
     return(
         <>
-        <Grid display={[`${hamburgerDisplay}`,`${hamburgerDisplay}`,`${hamburgerDisplay}`,'none']}  top={[110,120,137]} w='100%' h='auto' bg='white' pos='absolute' justifyContent='center' templateColumns='90%'templateRows='repeat(6,auto)'  rowGap={10}>
+        <Grid pb={100} display={[`${hamburgerDisplay}`,`${hamburgerDisplay}`,`${hamburgerDisplay}`,'none']}  top={[110,120,137]} w='100%' h='auto' bg='white' pos='absolute' justifyContent='center' templateColumns='90%'templateRows='repeat(6,auto)'  rowGap={10}>
 
           <Grid color='black'>
-              <Text fontSize={50} fontWeight='700' color='RGB(32, 33, 36)'>LET'S GET COOKIN'</Text>
+              <Text fontSize={[32,40,50]} fontWeight='700' color='RGB(32, 33, 36)'>LET'S GET COOKIN'</Text>
               <Button bg='RGB(32, 33, 36)' color='white' borderRadius={8} _hover={{bg:"RGB(32, 33, 36)"}} w={['40%','26%','20%']} fontSize={13} fontWeight='500'>Sign In / Sign Up {'->'}</Button>
           </Grid>
 
