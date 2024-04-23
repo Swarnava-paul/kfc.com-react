@@ -1,6 +1,7 @@
 import './App.css'
 
 // components
+import { Hamburger } from './components/hamburger'
 import { Navbar } from './components/navbar'
 import { Redlineloading } from './components/loading'
 import {Footer} from './components/footer'
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    <Hamburger/>
     <Pickup_delivery/>
     <Navbar/>
     <Redlineloading/>

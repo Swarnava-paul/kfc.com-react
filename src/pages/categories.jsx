@@ -90,7 +90,7 @@ const Products_boxes = ({i})=>{
                 i.map(index=>(
                     
                 <Grid key={index.price+Math.random()} h='auto' rowGap={3} boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' pb={4} borderRadius={10}>
-                <Image width={{base:'100%',sm:"100%",md:'100%',lg:'100%'}} borderTopLeftRadius={10} borderTopRightRadius={10} src={index.img}/>
+                <Image  width={{base:'100%',sm:"100%",md:'100%',lg:'100%'}} borderTopLeftRadius={10} borderTopRightRadius={10} src={index.img}/>
                 <Box  w='93%'><Text ml='3' fontSize={16} fontWeight='600' color='RGB(32, 33, 36)'>{index.title}</Text></Box>
                 {
                  (index.type=='Non veg'?(<Nonveg/>):(<Veg/>))
