@@ -29,7 +29,7 @@ return(
 
 <Flex pos='sticky' bg='white' top='0%' h={{base:'12vh',sm:'13vh',md:'14vh',lg:'17vh'}} align='center' justify='space-evenly' pl='5' pr='5'>
 
-<Box fontSize={{base:'20px',sm:'23px',md:'25px'}} justifyContent='space-evenly' alignItems='center' w={{base:'50%',sm:'30%',md:'20%'}} h='30%' display={{base:'flex',sm:'flex',md:'flex',lg:'none',xl:'none'}}>
+<Box fontSize={{base:'31px',sm:'32px',md:'34px'}} justifyContent='space-evenly' alignItems='center' w={{base:'50%',sm:'30%',md:'20%'}} h='30%' display={{base:'flex',sm:'flex',md:'flex',lg:'none',xl:'none'}}>
 <i className={`${hamburgerIcon}`} onClick={()=>{
 setHamburgerDisplay(hamburgerDisplay=='none'?'grid':'none')
 setHamburgerIcon(hamburgerIcon=='fa-solid fa-bars'?'fa-solid fa-xmark':'fa-solid fa-bars')
