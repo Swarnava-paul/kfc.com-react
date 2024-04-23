@@ -25,7 +25,7 @@ export const Hamburger = ()=>{
 
     return(
         <>
-        <Grid display={[`${hamburgerDisplay}`,`${hamburgerDisplay}`,`${hamburgerDisplay}`,'none']}  top={[159,180]} w='100%' h='auto' bg='white' pos='absolute' justifyContent='center' templateColumns='90%'templateRows='repeat(6,auto)'  rowGap={10}>
+        <Grid display={[`${hamburgerDisplay}`,`${hamburgerDisplay}`,`${hamburgerDisplay}`,'none']}  top={[110,120,137]} w='100%' h='auto' bg='white' pos='absolute' justifyContent='center' templateColumns='90%'templateRows='repeat(6,auto)'  rowGap={10}>
 
           <Grid color='black'>
               <Text fontSize={50} fontWeight='700' color='RGB(32, 33, 36)'>LET'S GET COOKIN'</Text>
