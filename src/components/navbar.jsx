@@ -45,7 +45,7 @@ setHamburgerIcon(hamburgerIcon=='fa-solid fa-bars'?'fa-solid fa-xmark':'fa-solid
  <Button sx={button_style} _hover={button_style.hover}>Rewards</Button>
  <Button sx={button_style}  _hover={button_style.hover}>Careers</Button>
  <Button sx={button_style} _hover={button_style.hover}>Merch</Button>
- <Button sx={button_style} _hover={button_style.hover}>Find a KFC</Button>
+ <Button sx={button_style} _hover={button_style.hover} gap={1}>Find a KFC <i style={{fontSize:'10px',marginTop:'2px'}} className="fa-solid fa-arrow-up-right-from-square"></i></Button>
 </Box>{/** home menu careers text holder Box */}
 
 
