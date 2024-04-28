@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext,useState } from 'react'
-import {Text,Flex,Box,Button,Image, useStatStyles, textDecoration} from '@chakra-ui/react'
+import {Text,Flex,Box,Button,Image,} from '@chakra-ui/react'
 
 //contexta
 import { DeliveryPickupContext } from '../contexts/pickup-delivery-context'

@@ -44,10 +44,6 @@ export function Footer(){
 }
 
 
-
-
-
-
 const Responsive_footer_for_small_screens =({i})=>{
 
 

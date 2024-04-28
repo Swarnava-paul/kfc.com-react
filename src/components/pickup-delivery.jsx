@@ -53,7 +53,7 @@ const common_bg={
 
    return(
       <>
-       <Grid  borderBottomLeftRadius={25} sx={common_bg} pb={15} placeItems='center' rowGap={4} >
+       <Grid  borderBottomLeftRadius={25} sx={common_bg} pb={15} placeItems='center' rowGap={4}>
 
          <Text fontSize={22}  fontWeight='700'>How would you like to order?</Text>
 

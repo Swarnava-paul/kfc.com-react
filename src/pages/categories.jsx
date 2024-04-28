@@ -2,13 +2,18 @@ import {Box,Grid,Text,Button,Image,Flex,Skeleton,SkeletonText} from '@chakra-ui/
 
 
 //react hooks
-import { useState , useEffect } from 'react'
+import { useState , useEffect,useContext } from 'react'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 //npm packages
 import axios from 'axios'
 
 //components
 import { Nonveg } from '../components/nonveg'
 import {Veg} from '../components/veg'
+
+//contexts
+import { cartContext } from '../contexts/cart-context'
 
 export const Categoriespage = ()=>{
 
@@ -79,15 +84,23 @@ const side_bar_menu_texts=[
 
 const Products_boxes = ({i})=>{
 
-function checkPinCodeIsProvidedAlreadyOrNot(){
+  const{cart,setCart}= React.useContext(cartContext)// cart context
+
+  const navigate=useNavigate()
+  
+
+function checkPinCodeIsProvidedAlreadyOrNot(i){
 
  let pincode = localStorage.getItem('pincode');
  if(pincode!=null||pincode!=undefined){
    //if pincode available then product directly will add to the cart 
+   console.log('pincode available');
  }
  else{
   // in case is user first time visit and try to add to cart and pincode is not available then user redirected
   // to the '/startorder page'
+    navigate('/P-not-available')
+    setCart(i)
  }
 
 }
@@ -111,7 +124,9 @@ function checkPinCodeIsProvidedAlreadyOrNot(){
                 <Text ml='3' color='RGB(32, 33, 36)' fontSize={16} fontWeight='600'>₹{index.price}</Text>
                  <Flex fontWeight='400' w='90%' margin='auto' p='15px 15px 15px 0px' fontSize={14} color='RGB(73, 73, 73)'>{index.description}</Flex>
                  <Flex  w='100%' justify='center'>
-                 <Button onClick={checkPinCodeIsProvidedAlreadyOrNot} pos='static' color='white' gap={2} bg='RGB(228, 0, 43)' w={{base:"90%",sm:"80%",md:'70%',lg:'70%'}} borderRadius={19} border='none' _hover={{bg:'RGB(228, 0, 43)'}}>
+                 <Button onClick={()=>{
+                  checkPinCodeIsProvidedAlreadyOrNot(index)
+                 }} pos='static' color='white' gap={2} bg='RGB(228, 0, 43)' w={{base:"90%",sm:"80%",md:'70%',lg:'70%'}} borderRadius={19} border='none' _hover={{bg:'RGB(228, 0, 43)'}}>
                    Add to Cart
                    <Image src='https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg'/>
                  </Button>
