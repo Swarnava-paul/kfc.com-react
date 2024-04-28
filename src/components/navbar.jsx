@@ -49,7 +49,7 @@ setHamburgerIcon(hamburgerIcon=='fa-solid fa-bars'?'fa-solid fa-xmark':'fa-solid
 
 <Flex  fontSize={{base:'17',sm:'22',md:'24',lg:'26'}} w={{base:'55%',sm:'40%',md:'45%',lg:'14%'}} h='80%' justify='space-evenly' align='center'>
 <i className="fa-solid fa-magnifying-glass"></i>
-<i className="fa-solid fa-user"></i>
+<Image w={['15%','13%','9%','20%']} src='https://i.ibb.co/ryc638K/Screenshot-2024-04-28-102128.png'/>
 <Image w={['14%','10%','7%','18%']} src='https://i.ibb.co/gr3qHsJ/Screenshot-2024-04-28-101749.png'/>
 </Flex> {/**search icon, bag icon, user icon Flex */}
 <Button borderRadius={25} w='14%' colorScheme='red' display={{base:'none',sm:'none', md:'none',lg:'flex'}}>Start order</Button>
