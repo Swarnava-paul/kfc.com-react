@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext,useState } from 'react'
-import {Text,Flex,Box,Button,Image, useStatStyles} from '@chakra-ui/react'
+import {Text,Flex,Box,Button,Image, useStatStyles, textDecoration} from '@chakra-ui/react'
 
 //contexta
 import { DeliveryPickupContext } from '../contexts/pickup-delivery-context'
@@ -19,7 +19,7 @@ const{hamburgerDisplay,setHamburgerDisplay}=React.useContext(HamburgerContext)
         w:'17%',
         borderRadius:'20',
         bg:'white',
-        hover:{bg:'black',color:'white'},
+        hover:{bg:'white',color:'black',textDecoration:'underline'},
         fontSize:'14px',
         fontWeight:'700'
     }// for buttons that contain home menu careers etc...
