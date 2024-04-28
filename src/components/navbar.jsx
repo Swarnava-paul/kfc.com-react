@@ -19,7 +19,9 @@ const{hamburgerDisplay,setHamburgerDisplay}=React.useContext(HamburgerContext)
         w:'17%',
         borderRadius:'20',
         bg:'white',
-        hover:{bg:'black',color:'white'}
+        hover:{bg:'black',color:'white'},
+        fontSize:'14px',
+        fontWeight:'700'
     }// for buttons that contain home menu careers etc...
 
 
@@ -38,7 +40,7 @@ setHamburgerIcon(hamburgerIcon=='fa-solid fa-bars'?'fa-solid fa-xmark':'fa-solid
 </Box>{/** hamburger icon and kfc image Box */}
 
 <Image mt='-3%' w='13%' display={{base:'none',sm:'none',md:'none',lg:'flex'}} src='https://i.ibb.co/fYjs4CY/Screenshot-2024-04-28-102658.png'/>
-<Box fontSize={15} fontWeight='700' color='black' alignItems='center' justifyContent='space-evenly' h='80%' display={{base:'none',sm:'none',md:'none',lg:'flex'}} w='50%'>
+<Box fontWeight='700' color='black' alignItems='center' justifyContent='space-evenly' h='80%' display={{base:'none',sm:'none',md:'none',lg:'flex'}} w='40%'>
  <Button sx={button_style} _hover={button_style.hover}>Menu</Button>
  <Button sx={button_style} _hover={button_style.hover}>Rewards</Button>
  <Button sx={button_style}  _hover={button_style.hover}>Careers</Button>
