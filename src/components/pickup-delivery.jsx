@@ -14,7 +14,9 @@ const {onDeliveryComponent,setOnDeliveryComponent} = React.useContext(DeliveryPi
 
 return(
     <>
-    <Grid  display={onDeliveryComponent} rowGap={0} pos='absolute'  m={['0%','0%','0%','11%']} bg='white' w={['100%','100%','100%','80%']}   borderRadius='25px'>
+    <Grid display={onDeliveryComponent} bg='rgb(12, 12, 12)' w='100%' h='100%' position='absolute' opacity='0.9' mt='-15%'>
+
+    <Grid mt='11%'  display={onDeliveryComponent} rowGap={0} ml='10%' position='absolute'   bg='white' w={['100%','100%','100%','80%']}   borderRadius='25px'>
   
   <Flex mt={['95px','120px','124px','0px']}  w='100%' h='9vh' borderTopLeftRadius={25} borderTopRightRadius={25} boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
   <Flex  w='95%' justify='center' align='center'  fontWeight='700'><Text fontSize={18}>START YOUR ORDER</Text></Flex>
@@ -27,6 +29,8 @@ return(
   </Grid>
 
      
+    </Grid>
+
     </Grid>
     </>
 )
@@ -57,7 +61,7 @@ const common_bg={
 
          <Text fontSize={22}  fontWeight='700'>How would you like to order?</Text>
 
-          <Flex w='100%' bg='red' h='7vh'>
+          <Flex w='100%' bg='red' h='12vh'>
           <Button color={(divBorder=='pickup'?'black':'RGB(101, 101, 101)')} sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('pickup')}}>Pick-Up</Button>
           <Button color={(divBorder=='delivery'?'black':'RGB(101, 101, 101)')}  sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('delivery');state='delivery'}}>Delivery</Button>
           </Flex>{/** pickup and delivery button holder */}

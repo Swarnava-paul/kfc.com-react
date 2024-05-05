@@ -15,9 +15,9 @@ function App() {
   return (
     <>
     <Hamburger/>
-    <Pickup_delivery/>
     <Navbar/>
     <Redlineloading/>
+    <Pickup_delivery/>
     <Allroutes/>
     <Footer/>
     </>
