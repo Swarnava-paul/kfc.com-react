@@ -16,7 +16,7 @@ return(
     <>
     <Grid display={onDeliveryComponent} bg='rgb(12, 12, 12)' w='100%' h='100%' position='absolute' opacity='0.9' mt='-15%'>
 
-    <Grid mt='11%'  display={onDeliveryComponent} rowGap={0} ml='10%' position='absolute'   bg='white' w={['100%','100%','100%','80%']}   borderRadius='25px'>
+    <Grid mt='11%'  display={onDeliveryComponent} rowGap={0} ml='10%' position='absolute'   bg='white' w={['100%','100%','100%','80%']}   borderRadius='10px'>
   
   <Flex mt={['95px','120px','124px','0px']}  w='100%' h='9vh' borderTopLeftRadius={25} borderTopRightRadius={25} boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
   <Flex  w='95%' justify='center' align='center'  fontWeight='700'><Text fontSize={18}>START YOUR ORDER</Text></Flex>
@@ -109,7 +109,7 @@ const common_bg={
 const Right_section = ()=>{
    return(
       <>
-      <Box   borderBottomRightRadius={25}>
+      <Box   borderBottomRightRadius={10}>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5767946.969462261!2d-105.69989700520588!3d37.30309266367307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8706291cf1e026a9%3A0xd9278a10cadf8705!2sTexas%20County%2C%20OK%2C%20USA!5e0!3m2!1sen!2sin!4v1713494727993!5m2!1sen!2sin" style={{width:"100%", height:"100%", borderBottomRightRadius:'15px'}} loading="lazy" allowFullScreen="" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </Box>
       </>
