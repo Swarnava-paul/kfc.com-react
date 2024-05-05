@@ -61,9 +61,9 @@ const common_bg={
 
          <Text fontSize={22}  fontWeight='700'>How would you like to order?</Text>
 
-          <Flex w='100%' bg='red' h='14vh'>
-          <Button color={(divBorder=='pickup'?'black':'RGB(101, 101, 101)')} sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('pickup')}}>Pick-Up</Button>
-          <Button color={(divBorder=='delivery'?'black':'RGB(101, 101, 101)')}  sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('delivery');state='delivery'}}>Delivery</Button>
+          <Flex w='100%'  h={['7vh','7vh','7vh','14vh']}>
+          <Button  color={(divBorder=='pickup'?'black':'RGB(101, 101, 101)')} sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('pickup')}}>Pick-Up</Button>
+          <Button color={(divBorder=='delivery'?'black':'RGB(101, 101, 101)')}  sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('delivery')}}>Delivery</Button>
           </Flex>{/** pickup and delivery button holder */}
 
          <Flex w='100%'>
