@@ -1,5 +1,9 @@
 *{
     margin: 0;
+    
+}
+#w{
+background-color: rgb(0, 0, 0);
 }
 
 .default-translate-loading-line{

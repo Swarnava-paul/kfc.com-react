@@ -14,11 +14,11 @@ const {onDeliveryComponent,setOnDeliveryComponent} = React.useContext(DeliveryPi
 
 return(
     <>
-    <Grid display={onDeliveryComponent} bg='rgb(12, 12, 12)' w='100%' h='100%' position='absolute' opacity='0.9' mt='-15%'>
+    <Grid display={onDeliveryComponent}  w='100%' h='100%' position='absolute'   bg='rgba(0, 0, 0, 0.6)' mt='-15%'>
 
-    <Grid mt='11%'  display={onDeliveryComponent} rowGap={0} ml='10%' position='absolute'   bg='white' w={['100%','100%','100%','80%']}   borderRadius='10px'>
+    <Grid mt='7%'  display={onDeliveryComponent} rowGap={0} ml='10%' position='absolute'   bg='white' w={['100%','100%','100%','80%']}   borderRadius='10px'>
   
-  <Flex mt={['95px','120px','124px','0px']}  w='100%' h='9vh' borderTopLeftRadius={25} borderTopRightRadius={25} boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
+  <Flex mt={['95px','120px','124px','0px']}  w='100%' h='12vh' borderTopLeftRadius={10} borderTopRightRadius={10} boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
   <Flex  w='95%' justify='center' align='center'  fontWeight='700'><Text fontSize={18}>START YOUR ORDER</Text></Flex>
   <Flex w='5%' justify='center' align='center' fontSize={20}><i className="fa-solid fa-xmark" style={{cursor:'pointer'}} onClick={()=>{setOnDeliveryComponent('none')}}></i></Flex>
   </Flex>
@@ -57,11 +57,11 @@ const common_bg={
 
    return(
       <>
-       <Grid  borderBottomLeftRadius={25} sx={common_bg} pb={15} placeItems='center' rowGap={4}>
+       <Grid  borderBottomLeftRadius={10} sx={common_bg} pb={15} placeItems='center' rowGap={4}>
 
          <Text fontSize={22}  fontWeight='700'>How would you like to order?</Text>
 
-          <Flex w='100%' bg='red' h='12vh'>
+          <Flex w='100%' bg='red' h='14vh'>
           <Button color={(divBorder=='pickup'?'black':'RGB(101, 101, 101)')} sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('pickup')}}>Pick-Up</Button>
           <Button color={(divBorder=='delivery'?'black':'RGB(101, 101, 101)')}  sx={button_style} _hover={button_style.hover} onClick={()=>{setDivBorder('delivery');state='delivery'}}>Delivery</Button>
           </Flex>{/** pickup and delivery button holder */}
