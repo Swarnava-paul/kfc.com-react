@@ -16,7 +16,7 @@ return(
     <>
     <Grid display={onDeliveryComponent}  w='100%' h='100%' position='absolute'   bg='rgba(0, 0, 0, 0.6)' mt={['-32%','-25%','-25%','-15%']}>
 
-    <Grid mt='7.1%'  display={onDeliveryComponent} rowGap={0} ml={['0%','0%','0%','10%']} position='absolute'   bg='white' w={['100%','100%','100%','80%']}   borderRadius='10px'>
+    <Grid mt='7.1%'  display={onDeliveryComponent} rowGap={0} ml={['0%','0%','0%','10.2%']} position='absolute'   bg='white' w={['100%','100%','100%','80%']}   borderRadius='10px'>
   
   <Flex mt={['95px','120px','124px','0px']} p={3} w='100%' h='12vh' borderTopLeftRadius={10} borderTopRightRadius={10} boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
   <Flex  w='95%' justify='center' align='center'  fontWeight='700'><Text fontSize={18}>START YOUR ORDER</Text></Flex>

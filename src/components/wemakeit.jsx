@@ -16,7 +16,7 @@ export const Wemakeitbetter = () =>{
 
           <Text fontSize={{base:'10px',sm:'13px',md:'14px',lg:'17px'}} fontWeight='400' color='white'>See what goes into making our world famous fried chicken.</Text>
 
-          <Button pos='static' fontSize={{base:'9px',sm:'10px',md:'12px'}} mt='22px' h={{base:"4vh",sm:'5vh',md:'5vh',lg:'5vh'}} w={{base:'28%',sm:'20%',md:'16%',lg:'13%'}} bg='RGB(32, 33, 36)' color='white' _hover={{bg:'RGB(32, 33, 36)'}} borderRadius='15px'>Learn More</Button>
+          <Button pos='static' fontSize={{base:'12px',sm:'13px',md:'14px'}} mt='22px' h={{base:"4vh",sm:'5vh',md:'5vh',lg:'8vh'}} w={{base:'28%',sm:'20%',md:'16%',lg:'13%'}} bg='RGB(32, 33, 36)' color='white' _hover={{bg:'RGB(32, 33, 36)'}} borderRadius='15px'>Learn More</Button>
 
           <Image w='50%' src='https://i.ibb.co/p1pfVty/Screenshot-2024-04-12-203023.png'/>
 
