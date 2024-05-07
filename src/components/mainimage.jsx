@@ -1,4 +1,5 @@
 import { Image ,Box,Text} from "@chakra-ui/react";
+import { px } from "framer-motion";
 import { useEffect ,useState} from "react";
 
 export const Imagemain =() =>{
@@ -36,7 +37,7 @@ const[imagedisplay,setDisplayimage]=useState('none')
 
     return(
         <>
-        <Box  w='100%'>
+        <Box  w='100%' >
 
         <Image w='100%' h={{base:'19vh',sm:'23vh',md:'34vh',lg:'74vh'}} src={image_array[count]}/>
         <Box pl='8' pr='8' bg='RGB(32, 33, 36)'  h={{base:'5vh',sm:'7vh',md:'8vh',lg:'10vh'}} display='flex' justifyContent='center' alignItems='center'>
