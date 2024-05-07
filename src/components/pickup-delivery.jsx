@@ -110,7 +110,15 @@ const Right_section = ()=>{
    return(
       <>
       <Box   borderBottomRightRadius={10}>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5767946.969462261!2d-105.69989700520588!3d37.30309266367307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8706291cf1e026a9%3A0xd9278a10cadf8705!2sTexas%20County%2C%20OK%2C%20USA!5e0!3m2!1sen!2sin!4v1713494727993!5m2!1sen!2sin" style={{width:"100%", height:"100%", borderBottomRightRadius:'15px'}} loading="lazy" allowFullScreen="" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5767946.969462261!2d-105.69989700520588!3d37.30309266367307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8706291cf1e026a9%3A0xd9278a10cadf8705!2sTexas%20County%2C%20OK%2C%20USA!5e0!3m2!1sen!2sin!4v1713494727993!5m2!1sen!2sin&output=embed"
+  style={{ width: "100%", height: "100%", borderBottomRightRadius: '15px' }}
+  loading="lazy"
+  allowFullScreen={true}
+  referrerPolicy="no-referrer-when-downgrade"
+  allow="fullscreen"
+>
+</iframe>
       </Box>
       </>
    )
