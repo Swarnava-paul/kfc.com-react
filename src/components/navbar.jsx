@@ -43,7 +43,7 @@ return(
     <Text fontWeight='700'>KFC US - Ordering App</Text>
     <Text>Join KFC Rewards to earn points toward FREE KFC!</Text>
     </Grid>
-    <Button w={['38%','20%','15%','0%']} borderRadius={12} height='5vh' fontSize={14} ml={0} mr={2} bg='black' color='white' >Use the App</Button>
+    <Button w={['38%','20%','15%','0%']} borderRadius={12} height='5vh' fontSize={14} ml={0} mr={2} bg='black' color='white' onClick={()=>{window.location.href='https://play.google.com/store/apps/details?id=com.kfc.us.mobile&hl=en_IN&gl=US'}}>Use the App</Button>
 </Flex>{/**pop up for use the app */}
 
 <Flex  bg='white' h={{base:'12vh',sm:'13vh',md:'14vh',lg:'17vh'}} align='center' justify='space-evenly' pl='5' pr='5'>
